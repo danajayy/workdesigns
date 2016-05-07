@@ -1,0 +1,169 @@
+/*
+Coded by Dana Joaquin
+Tuesday, May 3rd, 2016
+
+Stylesheet for AUTO EEG website (autoeeg_index_v00.html)
+*/
+
+html, body {
+	/*reset the padding and margins of the entire page*/
+	padding: 0;
+	margin: 0;
+}
+
+/*styling for image header at top of page */
+#header {
+	background-image: url('http://bostonnfb.com/wp-content/uploads/2011/02/brainwaves-e1297148433839.jpg');
+	/*only show 1 copy of image*/
+	background-repeat: no-repeat;
+	/*have background image span entire header*/
+	background-size: cover;
+	
+	height: 650px;
+	/*have header span entire width of page*/
+	width: 100%;
+}
+
+/*styling for the contents in the header section*/
+.container {
+	text-align: center;
+	font-family: 'Cabin', Helvetica, Verdana, sans-serif;
+}
+
+/* styling for the title of page */
+#header .container h1 {
+	color: white;
+	margin-top: 150px;
+	font-family: 'Jura', sans-serif;
+	font-size: 8em;
+}
+
+/*styling for the p contents in header*/
+#header .container p {
+	color: white;
+	font-family: 'Jura', Helvetica, Verdana, sans-serif;
+	letter-spacing: 8.5px;
+}
+
+/*styling of the about section */
+.about h1{
+	font-family: 'Jura', sans-serif;
+	font-size: 3em;
+	color: #3399ff;
+}
+
+/*bootstraps grid system for section spanning all 12 columns*/
+.about .col-sm-12 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+/*bootstraps grid system for section spanning 3 columns*/
+.col-sm-3 {
+	background-color: #3399ff;
+	font-family: 'Cabin', Helvetica, Verdana, sans-serif;
+	text-align: center;
+	color: white;
+	height: 300px;
+	padding-top: 85px;
+}
+
+/*styling for hovering over links in resources section*/
+.col-sm-3:hover {
+	background-color: #66b3ff;
+	transition: background-color .5s;
+}
+
+/*styling for titles in resources section*/
+.col-sm-3 h1 {
+	font-family: 'Jura', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+/*styling for empty span to make entire column in resource to be a link */
+.resource-links {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	
+	/*make sure that this appears at the very top*/
+	z-index: 1;
+}
+
+/*styling for more info section*/
+.more-info {
+	text-align: center;
+	font-family: 'Cabin', Helvetica, Verdana, sans-serif;
+}
+
+.more-info h1 {
+	font-family: 'Jura', sans-serif;
+	color: #3399ff;
+}
+
+.more-info .col-sm-12 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+/*footer section of page */
+
+/*bootstraps grid system for section spanning 6 columns*/
+#footer .col-sm-6 {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #3399ff;
+	height: 80px;
+}
+
+/*left side of footer - outside links */
+.outer-links {
+	list-style-type: none;
+}
+
+.outer-links li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px 5px 5px 5px;
+	border-radius: 23px;
+}
+
+.outer-links li:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: background-color .5s;
+}
+
+.outer-links a:link{
+	text-decoration: none;
+	color: white;
+}
+
+.outer-links a:visited{
+	text-decoration: none;
+}
+
+
+/* right side of footer - contact information */
+.contact {
+	color: white;
+}
+
+.contact a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+}
+
+.contact a:hover {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	transition: background-color .5s;
+	border-radius: 23px;
+}

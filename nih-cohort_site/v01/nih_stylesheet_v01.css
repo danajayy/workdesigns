@@ -1,0 +1,210 @@
+ /* CSS stylesheet for nih_index_v01.html file */
+ /*				*/
+ 
+ /* reset the margins and paddings of entire html document */
+ /*				*/
+ html, body {
+	 padding: 0;
+	 margin: 0;
+ }
+ 
+ 
+ /* make all p tags with 'Cabin' font by default and its backups */
+ /*				*/
+ p {
+	 font-family: 'Cabin', Helvetica, Verdana, sans-serif;
+ }
+
+ /* declaring the required size of webpage
+   will contain all html elements in main so will
+   stay within height and width */
+  /*				*/
+ .main {
+	 height: 600px;
+	 width: 800px;
+	 
+	 /* center element */
+	 /*				*/
+	 margin: auto; 
+ }
+ 
+ /* ------ HEADER SECTION CSS STYLING ------*
+ /*				*/
+ 
+ /* set banner image of header */
+ /*				*/
+ #header {
+	 padding: 0px 10px 10px 0px;
+	 
+	 /* set default font Jura or sans-serif as backup */
+	 /*				*/
+	 font-family: 'Jura', sans-serif;
+	 color: white;
+	 background-image: url('http://i.imgur.com/uAPZVvY.png');
+	 
+	 /* ensures background spans entire width of header */
+	 /*				*/
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 height: 230px;
+ }
+ 
+ #header h1 {
+	 font-size: 5em;
+	 margin-left: 60px;
+ }
+ 
+ #header h4 {
+	 margin-left: 140px;
+	 margin-top: -13px;
+ }
+ 
+ /* ------ NAV SECTION CSS STYLING ------ */
+ /*				*/
+ 
+ /* declaring size of nav bar */
+ /*				*/
+ .nav {
+	 height: 30px;
+	 width: 800px;
+ }
+ 
+ /* styling of individual column in nav bar */
+ /*				*/
+ .nav .col-xs-2 {
+	 background-color: #255A8E;
+	 text-align: center;
+	 color: white;
+	 padding-top: 10px;
+	 font-size: 0.8em;
+ }
+ 
+ /* styling when cursor hovers over nav buttons */
+ /*				*/
+ .nav .col-xs-2:hover {
+	 background-color: #3480cb;
+	 transition: background-color .5s;
+ }
+ 
+ /* makes entire button in nav the link */
+ /* this is done using an empty span in the a tag */
+ /*				*/
+ .nav-links {
+	position: absolute;
+	
+	/* make span element the entire size of div */
+	/*				*/
+	width: 100%;
+	height: 100%;
+	
+	/* position span at top-left of button */
+	/*				*/
+	top: 0;
+	left:0;
+	
+	/*make sure that this appears at the very top*/
+	z-index: 1;
+ }
+
+ /* ------ ABOUT SECTION CSS STYLING ------ */
+ /*				*/
+ 
+ /* styling of entire about section */
+ /*				*/
+ #about {
+	padding-bottom: 5px;
+	color: #255A8E;
+	text-align: center;
+ }
+ 
+ #about h2 {
+	 font-family: 'Jura', sans-serif;
+	 margin-left: 5px;
+	 font-size: 1.6em;
+ }
+ 
+ #about p {
+	 margin-left: 5px;
+	 font-size: 0.9em;
+ }
+
+ /* ------ SUBPAGES SECTION CSS STYLING ------ */
+ /*				*/
+ 
+ /* styling of individual column/button in subpages section */
+ /*				*/
+ .subpages .col-xs-3 {
+	 padding-top: 10px;
+	text-align: center;
+	color: white;
+	background-color: #3480cb; 
+ }
+ 
+ .subpages h2 {
+	 display: inline;
+	 font-family: 'Jura', sans-serif;
+	 font-size: 1.3em;
+ }
+ 
+ .subpages p {
+	 font-size: 0.9em;
+ }
+ 
+ /* styling for subpages button when cursor hovers over it */
+ /*				*/
+ .subpages .col-xs-3:hover {
+	 background-color: #4da9ff;
+	 transition: background-color .5s;
+ }
+ 
+ /* style the span inside the a tag to make the entire div a link */
+ /* uncomment it when placed links in */
+ /*				*/
+ /*
+ .subpages-links {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	
+	/*make sure that this appears at the very top*/
+	/*				
+	z-index: 1;
+ }
+ */
+ 
+ /* ------ OTHER-INFO SECTION CSS STYLING ------ */
+ /*				*/ 
+ 
+ .other-info .col-xs-6{
+	height: 75px;
+	color: #255A8E;
+	background-color: white;
+	margin-top: 3px;
+ }
+ 
+ .other-info h4 {
+	 font-family: 'Jura', sans-serif;
+	 font-weight: 600;
+ }
+ 
+ .other-info p {
+	 font-size: 0.9em;
+ }
+ 
+ /* ------ FOOTER SECTION STYLING ------ */
+ /*				*/
+ 
+ #footer {
+	 padding-top: 3px;
+	 padding-bottom: 3px;
+	 color: white;
+	 background-color: #255A8E;
+	 font-size: 0.7em;
+ }
+ 
+ #footer p {
+	 display: inline;
+ }
+ 
