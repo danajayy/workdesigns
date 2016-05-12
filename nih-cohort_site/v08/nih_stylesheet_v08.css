@@ -1,4 +1,4 @@
-/* File: nih_index_v06.html
+/* File: nih_index_v08.html
  * 
  * This file provides the fonts and overall layout and design
  * of the NIH COHORT website.
@@ -30,36 +30,28 @@ html, body {
  margin: 0;
 }
 
-/* 
- * This section sets the background image of the entire page.
- * Makes sure that the background image is fixed, does not repeat
- * and covers the entire webpage. In addition, all contents
- * are centered on the page.
- */
-
 body {
- background-image: url('http://i.imgur.com/rMFpwEP.png');
- /* ensures background spans entire width of header */
+ background-image: url('http://i.imgur.com/ilJ3Bn4.png');
+  /* ensures background spans entire width of header */
  background-size: cover;
  background-repeat: no-repeat;
- position: fixed;
- left: 0;
- right: 0;
- margin-left: auto;
- margin-right: auto;
 }
  
 /* 
  * This declares the required size of 800x600 for the entire webpage
  * where all the contents and graphics must be contained in.
+ * Also, the entire content will be centered on the page.
  */
-
-.page-size {
- width: 700px; 
+ 
+.main {
+ position: fixed;
  left: 0;
  right: 0;
  margin-left: auto;
  margin-right: auto;
+ height: 100vh;
+ width: 700px; 
+ background-color: rgba(255, 255, 255, 0.2)
 }
  
 /******************************************************************************
@@ -77,8 +69,7 @@ body {
  * This makes all p tags with 'Cabin' font by default.
  * If not available, the back-up fonts are first Helvetica then Verdana.
  * If neither of the back-ups are available, then use the machine's default
- * sans-serif font.
- * This makes all p tags have a default color white.
+ * sans-serif font. Makes all p tags have font color black.
  */
  
 p {
@@ -92,7 +83,7 @@ p {
  * All header tags are classed in "title" since each header tag
  * in each of the sections have their own styling.
  * If the font is not available, then the page will use the 
- * machine's default sans-serif font. Makes the default color black.
+ * machine's default sans-serif font. Makes default font color black.
  */
  
 .title {
@@ -108,8 +99,8 @@ p {
 * margins of the title and subtitle, and the font-size of the title and subtitle.
 ******************************************************************************/
 
-/*
- * This defines the height of header and centers the title and subtitle.  
+/* 
+ * This defines the size of the header and centers its contents.
  */
 
 #header {
@@ -157,8 +148,7 @@ p {
  width: 100%;
  /* removes the white space gap between the nav links */
  display: flex;
- background-color: rgba(0, 0, 0, 0.1);
- right: 0;
+ background-color: rgba(0, 0, 0, 0.2);
 }
  
 /*
@@ -167,7 +157,6 @@ p {
  */
  
 .nav-btn {
- float: right;
  display: inline-block;
  text-align: center;
  font-size: 0.7em;
@@ -177,13 +166,13 @@ p {
 }
  
 /*
- * This changes the style of the links when the user hovers over them.
+ * This changes styles the links when the user hovers over them.
  * The background color gets light and the transition of the background is animated,
  * takes half a second for the background color to change.
  */
  
 #nav .nav-btn:hover {
- background-color: #b3e6ff;
+ background-color: rgba(255, 255, 255, 0.3);
  transition: background-color .5s;
 }
 
@@ -196,13 +185,12 @@ p {
 #nav a {
  display: block;
  height: 100%;
- color: white;
  text-decoration: none;
 }
 
 /*
  * This removes any text decoration to the link when it has already
- * been visited.
+ * been visited. Keeps the simple white font.
  */
 
 #nav a:visited {
@@ -234,12 +222,12 @@ p {
  margin-top: -8px;
  padding-left: 15px;
  padding-right: 15px;
- background-color: rgba(0, 0, 0, 0.1);
+ border-radius: 23px;
 }
 
 /*
  * This styles the title of the proj-goal section. Defines the
- * font size and some spacing.
+ * fon size and some spacing.
  */
 
 #proj-goal h2 {
@@ -254,8 +242,8 @@ p {
  */
 
 #proj-goal p {
- padding-left: 8px;
- padding-right: 8px;
+ padding-left: 5px;
+ padding-right: 5px;
  padding-bottom: 8px;
  font-size: 0.75em;
  font-weight: 600;
@@ -265,9 +253,19 @@ p {
 /******************************************************************************
 * Section 06: Subpages section styling
 *
-* This section styles the buttons and links for the subpages about this project. 
-* When the visitor hovers over the button, it changes color to indicate it is a link.
+* This section styles the buttons for the subpages about this project. There is about
+* commented out CSS styling section for the links of the subpages. It is the same
+* styling section used for the navigation links where the entire block is the link
+* as opposed the text. Remove the comments for that section when ready to use.
 ******************************************************************************/
+ 
+/* 
+ * This removes the whitespace between the subpage buttons.
+ */
+ 
+#subpages {
+ display: flex;
+}
 
 /*
  * This makes the buttons line next to each other on the same line.
@@ -277,12 +275,9 @@ p {
  
 #subpages .subpage-btn {
  display: inline-block;
- width: 150px;
- text-align: center;
- margin-left: 20px;
+ width: 200px;
+ text-align: center; 
  margin-bottom: -10px;
- background-color: rgba(0, 0, 0, 0.2);
- border-radius: 15px;
 }
 
 /*
@@ -302,12 +297,12 @@ p {
  */
  
 #subpages p {
- font-size: 0.7em;
+ font-size: 0.8em;
 }
 
 /*
- * This styles the actual link text by removing any
- * text-decoration. Change the display of a tag
+ * This styles the actual link text by removing
+ * any text-decoration. Change the display of a tag
  * to block so link spans entire size of the button.
  */
 
@@ -333,8 +328,7 @@ p {
  */
  
 #subpages .subpage-btn:hover {
- background-color: #b3e6ff;
- border-radius: 15px;
+ background-color: rgba(0, 0, 0, 0.2);
  transition: background-color .5s;
 }
  
@@ -352,7 +346,7 @@ p {
  
 /*
  * This styles both columns in the other-info section. Defines the height of each
- * column, the background color and margin-top space.
+ * column, the background color, and margin-top space.
  */
  
 .other-info .otherinfo-col{
@@ -393,13 +387,20 @@ p {
  */
  
 #footer {
- padding-top: 3px;
- padding-bottom: 3px;
+ padding-top: 5px;
  background-color: rgba(0, 0, 0, 0.1);
  font-size: 0.7em;
- /* This makes the footer span rest of webpage height */
  height: 100vh;
  text-align: right;
+ padding-right: 10px;
+}
+ 
+/*
+ * This makes the text take up only as much space it needs. (No margins or padding)
+ */
+ 
+#footer p, #design {
+ display: inline;
 }
  
 /*
