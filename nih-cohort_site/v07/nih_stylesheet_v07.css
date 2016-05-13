@@ -22,12 +22,13 @@
 /* 
  * This resets the margins for the entire html document so elements
  * can appear all the way to the top of browser page. Helps with the 
- * design and aesthetics.
+ * design and aesthetics. Makes the entire html document span width of page.
  */
  
 html, body {
  padding: 0;
  margin: 0;
+ width: 100%;
 }
 
 /* 
@@ -69,12 +70,12 @@ body {
 * So far, the fonts are being sourced from Google's font API.
 * The fonts used are:
 *			Headers (h1, h2, etc.): Jura
-*			regular text: Cabin
+*			regular text: Open Sans
 * For design, choose sans-serif style fonts.
 ******************************************************************************/
 
 /* 
- * This makes all p tags with 'Cabin' font by default.
+ * This makes all p tags with 'Open Sans' font by default.
  * If not available, the back-up fonts are first Helvetica then Verdana.
  * If neither of the back-ups are available, then use the machine's default
  * sans-serif font.
@@ -227,6 +228,7 @@ p {
 /*
  * This applies the styling to all the elements in the proj-goal section. Slight
  * padding on the right of text to balance the indentation on the left. (For aesthetics)
+ * This also makes the background of the proj-goal section have a light gray background.
  */
 
 #proj-goal {
@@ -265,10 +267,9 @@ p {
 /******************************************************************************
 * Section 06: Subpages section styling
 *
-* This section styles the buttons for the subpages about this project. There is about
-* commented out CSS styling section for the links of the subpages. It is the same
-* styling section used for the navigation links where the entire block is the link
-* as opposed the text. Remove the comments for that section when ready to use.
+* This section styles the buttons for the subpages about this project. 
+* These buttons are here if needed if they are different from the ones on
+* the navigation bar.
 ******************************************************************************/
  
 /* 
@@ -353,7 +354,7 @@ p {
 *
 * This section contains the styling for the other-info section of the webpage.
 * (Further information and contact information) The font-styling, background color,
-* height of section, and some margin adjustmenst are done.
+* height of section, and some margin adjustments are done.
 ******************************************************************************/
  
 .other-info {
@@ -362,7 +363,7 @@ p {
  
 /*
  * This styles both columns in the other-info section. Defines the height of each
- * column, the background color, font-color, and margin-top space.
+ * column, the background color, and margin-top space.
  */
  
 .other-info .otherinfo-col{
@@ -413,7 +414,7 @@ p {
 }
  
 /*
- * This make the design credit text a very transparent white.
+ * This make the design credit text a very transparent white so it won't be so noticeable.
  */
  
 #design {
