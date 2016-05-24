@@ -43,11 +43,11 @@ body {
  /* ensures background spans entire width of header */
  background-size: cover;
  background-repeat: no-repeat;
- position: fixed;
  left: 0;
  right: 0;
  margin-left: auto;
  margin-right: auto;
+ position: fixed;
 }
  
 /* 
@@ -57,11 +57,22 @@ body {
  */
 
 .page-size {
- width: 700px; 
+ width: 750px; 
  left: 0;
  right: 0;
  margin-left: auto;
  margin-right: auto;
+}
+
+ul {
+ list-style: none;
+ font-size: 0.9em;
+ text-align: center;
+ margin-left: -50px;
+}
+
+ul li {
+ padding-bottom: 6px;
 }
  
 /******************************************************************************
@@ -83,7 +94,7 @@ body {
  * Makes all p tags font color black.
  */
  
-p {
+* {
  font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
  color: black;
 }
@@ -117,19 +128,20 @@ p {
 
 #header {
  padding: 0px 10px 0px 0px;
- margin-bottom: 8px;
- height: 200px;
+ margin-bottom: 50px;
  text-align: center;
 }
  
 /*
  * This changes the font size of the h1 tag (title of webpage).
  * Also moves it to the right a little bit for aesthetics.
+ * Decrease margin-bottom so subtitle is closer to it
  */ 
  
 #header h1 {
- font-size: 5em;
- margin-top: 25px;
+ font-size: 3.5em;
+ margin-top: -10px;
+ margin-bottom: -20px;
 }
  
 /*
@@ -138,8 +150,7 @@ p {
  */
  
 #header h4 {
- font-size: 0.85em;
- margin-top: -40px;
+ font-size: 1.4em;
 }
  
 /******************************************************************************
@@ -150,6 +161,20 @@ p {
 * and the styling effects when the user hovers over the buttons.
 * The navigation bar are already linked to their respective pages.
 ******************************************************************************
+
+/*
+ * This is styling for the NIH Cohort logo in the navigation bar
+ * So far, the logo is just the text name, it is just a placeholder for now
+ */
+
+#logo {
+ display: inline-block;
+ float: left;
+ text-align: center;
+ height: 31px;
+ padding-top: 10px;
+ margin-top: auto;
+}
  
 /*
  * This declares the size of the navigation bar.
@@ -161,6 +186,7 @@ p {
  /* removes the white space gap between the nav links */
  display: flex;
  background-color: rgba(0, 0, 0, 0.2);
+ margin-bottom: 50px;
 }
  
 /*
@@ -235,6 +261,9 @@ p {
 
 #proj-goal {
  margin-top: -8px;
+ margin-bottom: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
  padding-left: 15px;
  padding-right: 15px;
  background-color: rgba(0, 0, 0, 0.1);
@@ -260,10 +289,9 @@ p {
 #proj-goal p {
  padding-left: 8px;
  padding-right: 8px;
- padding-bottom: 8px;
- font-size: 0.75em;
- font-weight: 600;
- text-align: justify;
+ font-size: 0.9em;
+ font-weight: 400;
+ text-align: center;
 }
 
 /******************************************************************************
@@ -292,8 +320,8 @@ p {
  background-color: rgba(0, 0, 0, 0.2);
  display: inline-block;
  width: 150px;
- margin-left: 20px;
- margin-bottom: -10px;
+ margin: auto;
+ padding-top: 8px;
  text-align: center;
  border-radius: 15px;
 }
@@ -360,21 +388,80 @@ p {
 ******************************************************************************/
  
 .other-info {
- display: flex;
+ background-color: transparent;
+ text-align: center;
+}
+
+
+/*
+ * resource of clearfix method: https://css-tricks.com/fluid-width-equal-height-columns/
+ *
+ * group is a clearfix method that allows the parent
+ * container to maintain its dimensions despite having
+ * only floated children
+ */
+
+.group:after{
+ visibility: hidden;
+ display: block;
+ font-size: 0;
+ content: " ";
+ clear: both;
+ height: 0;
+}
+
+/*
+ * This makes group div take up as much space it needs, 
+ * but still maintains block properties.
+ */
+
+.group {
+ display: inline-block;
 }
  
 /*
- * This styles both columns in the other-info section. Defines the height of each
- * column, the background color, and margin-top space.
+ * This styles both columns in the other-info section.
+ * Makes background transparent and centers all text inside.
  */
  
-.other-info .otherinfo-col{
+.col-block-4{
  margin: auto;
+ width: 160px;
+ padding-top: 15px;
+ padding-bottom: 15px;
  display: inline-block;
- height: 75px;
- width: 350px;
- background-color: transparent;
+}
+
+.col-block-2 {
+ float: left;
+ margin: auto;
+ width: 45%;
+ padding-top: 15px;
+ padding-left: 5%;
+}
+
+/* 
+ * This makes the normal text slightly smaller to save space
+ */
+
+.col-block-4 p, .col-block-2 p {
+ font-size: 0.8em;
+}
+
+.col-block-2 ul {
+ list-style: none;
+ font-size: 0.7em;
  text-align: center;
+ padding-right: 10px;
+}
+
+.col-block-2 a:link {
+ text-decoration: none;
+}
+
+.col-block-2 a:hover {
+ color: #595959;
+ text-decoration: underline;
 }
  
 /* 
@@ -382,16 +469,10 @@ p {
  */
  
 .other-info h4 {
- margin-bottom: -7px;
+ font-size: 1em;
+ margin-top: 5px;
+ margin-bottom: -5px;
  font-weight: 600;
-}
- 
-/* 
- * This makes the normal text slightly smaller to save space
- */
- 
-.other-info p {
- font-size: 0.7em;
 }
  
 /******************************************************************************
@@ -406,8 +487,7 @@ p {
  */
  
 #footer {
- padding-top: 3px;
- padding-bottom: 3px;
+ clear: both;
  background-color: rgba(0, 0, 0, 0.1);
  font-size: 0.7em;
  /* This makes the footer span rest of webpage height */
