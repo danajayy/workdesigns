@@ -128,7 +128,8 @@ ul li {
 
 #header {
  padding: 0px 10px 0px 0px;
- margin-bottom: 50px;
+ margin-top: 40px;
+ margin-bottom: 40px;
  text-align: center;
 }
  
@@ -140,7 +141,7 @@ ul li {
  
 #header h1 {
  font-size: 3.5em;
- margin-top: -10px;
+ margin-top: -15px;
  margin-bottom: -20px;
 }
  
@@ -186,7 +187,6 @@ ul li {
  /* removes the white space gap between the nav links */
  display: flex;
  background-color: rgba(0, 0, 0, 0.2);
- margin-bottom: 50px;
 }
  
 /*
@@ -292,6 +292,40 @@ ul li {
  font-size: 0.9em;
  font-weight: 400;
  text-align: center;
+}
+
+#obeidpic {
+ background-image: url('http://i.bnet.com/blogs/iyad-obeid-200x300.jpeg');
+}
+
+#piconepic {
+ background-image: url('https://media.licdn.com/media/AAEAAQAAAAAAAAVzAAAAJGY0MzZmNTQ3LWFjZDQtNDQwYS04MzMxLWRiOGRhNDg3MGFjMg.jpg');
+}
+
+#harabagiupic {
+ background-image: url('https://www.utdallas.edu/chairs/profiles/images/Harabagiu_1.jpg');
+}
+
+.profpic {
+ float: left;
+ height: 80px;
+ width: 80px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ border-radius: 100%;
+ margin-right: 5px;
+}
+
+#faculty-bio .profname {
+ display: inline-block;
+ text-align: left;
+ font-size: 0.8em;
+ margin-top: -13px;
+}
+
+#faculty-bio .profbio {
+ margin-top: -13px;
+ font-size: 0.71em;
 }
 
 /******************************************************************************
