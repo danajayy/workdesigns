@@ -64,12 +64,22 @@ body {
  margin-right: auto;
 }
 
+/*
+ * This styles all the unordered lists that appear on the website. 
+ * The bullet points are removed for aesthetic purposes. The margin is made -50px
+ * to the left to compensate the space of the bullet points.
+ */
+
 ul {
  list-style: none;
  font-size: 0.9em;
  text-align: center;
  margin-left: -50px;
 }
+
+/*
+ * This puts a little bit of space between each bullet element of an unordered list.
+ */
 
 ul li {
  padding-bottom: 6px;
@@ -237,7 +247,7 @@ ul li {
 }
 
 /******************************************************************************
-* Section 05: Project goal section styling
+* Section 05: Page content section styling
 *
 * This section contains all the styling information for the header div in
 * the html document. It declares the banner image used for the header, the
@@ -249,7 +259,7 @@ ul li {
  * section to get the CSS styling.
  */
  
-#proj-goal {
+#page-content {
 	 
 }
 
@@ -259,7 +269,7 @@ ul li {
  * This also makes the background of the proj-goal section have a light gray background.
  */
 
-#proj-goal {
+#page-content {
  margin-top: -8px;
  margin-bottom: 10px;
  padding-top: 10px;
@@ -274,7 +284,7 @@ ul li {
  * font size and some spacing.
  */
 
-#proj-goal h2 {
+#page-content h2 {
  font-size: 1.3em;
  padding-top: 4px;
  margin-bottom: -5px;
@@ -286,7 +296,7 @@ ul li {
  * A little bit of spacing around the text to center content more in the container.
  */
 
-#proj-goal p {
+#page-content p {
  padding-left: 8px;
  padding-right: 8px;
  font-size: 0.9em;
@@ -294,17 +304,38 @@ ul li {
  text-align: center;
 }
 
+/*
+ * This inserts Dr. Obeid's profile picture in the .profpic class div as a background.
+ * This allows more control of resizing the image without distorting the quality and its dimensions.
+ */
+ 
 #obeidpic {
  background-image: url('http://i.bnet.com/blogs/iyad-obeid-200x300.jpeg');
 }
 
+/*
+ * This inserts Dr. Picone's profile picture in the .profpic class div as a background.
+ * This allows more control of resizing the image without distorting the quality and its dimensions.
+ */
+ 
 #piconepic {
  background-image: url('https://media.licdn.com/media/AAEAAQAAAAAAAAVzAAAAJGY0MzZmNTQ3LWFjZDQtNDQwYS04MzMxLWRiOGRhNDg3MGFjMg.jpg');
 }
 
+/*
+ * This inserts Dr. Harabagiu's profile picture in the .profpic class div as a background.
+ * This allows more control of resizing the image without distorting the quality and its dimensions.
+ */
+ 
 #harabagiupic {
  background-image: url('https://www.utdallas.edu/chairs/profiles/images/Harabagiu_1.jpg');
 }
+
+/*
+ * This styles the empty div that will contain the profile picture of the faculty for this project.
+ * This alters the size of the picture and contains the image in a circle. It makes the picture
+ * align to the left of all the bio text. The profile picture is made size 80x80.
+ */
 
 .profpic {
  float: left;
@@ -316,12 +347,21 @@ ul li {
  margin-right: 5px;
 }
 
+/*
+ * This inserts styles the faculty's name, position in project, and education.
+ */
+
 #faculty-bio .profname {
  display: inline-block;
  text-align: left;
  font-size: 0.8em;
  margin-top: -13px;
 }
+
+/*
+ * This styles the text of the faculty bio. They text is made smaller so it will
+ * fit within the 600px height limit.
+ */
 
 #faculty-bio .profbio {
  margin-top: -13px;
