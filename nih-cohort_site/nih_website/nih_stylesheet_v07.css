@@ -391,13 +391,13 @@ ul li {
  */
  
 #subpages .subpage-btn {
- background-color: rgba(0, 0, 0, 0.2);
+ background-color: #b3b3b3;
  display: inline-block;
  width: 150px;
  margin: auto;
  padding-top: 8px;
  text-align: center;
- border-radius: 15px;
+ border-radius: 23px;
 }
 
 /*
@@ -448,8 +448,8 @@ ul li {
  */
  
 #subpages .subpage-btn:hover {
- background-color: rgba(0, 0, 0, 0.1);
- border-radius: 15px;
+ background-color: #d9d9d9;
+ border-radius: 23px;
  transition: background-color .5s;
 }
  
@@ -494,17 +494,20 @@ ul li {
 }
  
 /*
- * This styles both columns in the other-info section.
- * Makes background transparent and centers all text inside.
+ * This divides a container into 4 equal width columns
  */
  
 .col-block-4{
+ float: left;
  margin: auto;
- width: 160px;
+ width: 21%;
  padding-top: 15px;
- padding-bottom: 15px;
- display: inline-block;
+ padding-left: 22px;
 }
+
+/*
+ * This divides a container into 2 equal width columns
+ */
 
 .col-block-2 {
  float: left;
@@ -515,13 +518,17 @@ ul li {
 }
 
 /* 
- * This makes the normal text slightly smaller to save space
+ * This makes the column text slightly smaller to save space
  */
 
 .col-block-4 p, .col-block-2 p {
  font-size: 0.8em;
 }
 
+/* 
+ * This styles unordered list children of .col-block-2
+ */
+ 
 .col-block-2 ul {
  list-style: none;
  font-size: 0.7em;
@@ -529,9 +536,33 @@ ul li {
  padding-right: 10px;
 }
 
+/* 
+ * This styles unordered list children of .col-block-4
+ * The bullet points are removed, there is padding-left
+ * to position the text in the center and the font-size is smaller
+ */
+ 
+.col-block-4 ul {
+ padding-left: 55px;
+ list-style: none;
+ text-align: center;
+ font-size: 0.7em;
+}
+
+/* 
+ * This styles the link children of col-block-2
+ * No text decoration is applied to the links
+ */
+
 .col-block-2 a:link {
  text-decoration: none;
 }
+
+/*
+ * This styles a link when the cursor hovers over it
+ * Only applies to links children of col-block-2
+ * When hovered, the links are underlined and font color changes
+ */
 
 .col-block-2 a:hover {
  color: #595959;
@@ -561,7 +592,6 @@ ul li {
  */
  
 #footer {
- clear: both;
  background-color: rgba(0, 0, 0, 0.1);
  font-size: 0.7em;
  /* This makes the footer span rest of webpage height */
