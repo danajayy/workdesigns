@@ -94,6 +94,28 @@ ul li {
  height: 45px;
  width: 45px;
 }
+
+.mission-icon {
+ height: 65px;
+ width: 65px;
+ margin-bottom: -10px;
+}
+
+.contacts-image {
+ height: 100px;
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: fixed;
+}
+
+#TUCOE-pic{
+ background-image: url('./img/temple-coe-bldg.gif');
+}
+
+#UTD-pic {
+ background-image: url('./img/UT_Dallas_Student_Service_Building.jpg')
+}
  
 /******************************************************************************
 * Section 02: Define default fonts for page

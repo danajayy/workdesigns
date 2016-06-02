@@ -130,12 +130,14 @@
 	
 	<!-- TU Address -->
 	<div class="col-block-2">
+     <div class="contacts-image" id="TUCOE-pic"></div>
 	 <h4 class="title">Temple University</h4>
 	 <p>1947 North 12th Street</br>Philadelphia, Pennsylvania, 19122</p>
 	</div>
 	
 	<!-- UT Dallas Address -->
 	<div class="col-block-2">
+     <div class="contacts-image" id="UTD-pic"></div>
 	 <h4 class="title">University of Texas at Dallas</h4>
 	 <p>Office of Sponsored Projects, AD15</br>800 West Campbell Road</br>Richardson, Texas, 75080</p>
 	</div>

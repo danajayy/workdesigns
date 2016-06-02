@@ -103,54 +103,63 @@
    <div id="page-content">
 
 	<p class="page-size" style="font-weight: 600;">The mission of The National Institute of Health Cohort (NIH Cohort) project is to develop an automatic, detailed and organized EEG data retrieval system that is easily accessible to the public.</p>
-	<p class="page-size"> Our project has the potential to aid medical diagnoses and help numerous research areas such as neuroscience, medicine, and bioengineering that need EEG results. We are helping our medical doctors, our fellow researchers, and our students by providing the valuable information they need.</p>
-	 
-	<p> To achieve our mission, our project is divided into four main goals.</p>
 	  
    <!-- end of page-content section -->
    <!--				-->
    </div>
 	 
-   <!-- start of column-section -->
+   <!-- start of column-section, first row -->
    <!--				-->
-   <div class="column-section no-gap page-size">
+   <div class="column-section page-size">
 	
-	<!-- 4 columns in column-section -->
+	<!-- 2 columns in column-section -->
 	<!--				-->
 	 
-	<!-- Goal 1 Column -->
-	<!-- first column -->
+	<!-- Goal 1 block -->
+	<!-- first row -->
 	<!--				-->
-	<div class="col-block-4">
-	 <h4 class="title">1. Recognize EEG events</h4>
+	<div class="col-block-2">
+     <img class="mission-icon" src="img/brain-wave.png" />
+	 <h4 class="title">Recognize EEG events</h4>
 	 <p>Develop automatic techniques to identify and time-align EEG events that contribute to diagnosis.</p>
 	</div>
 	 
-	<!-- Goal 2 Column -->
-	<!-- second column -->
+	<!-- Goal 2 block -->
+	<!-- second row -->
 	<!--				-->
-	<div class="col-block-4">
-	 <h4 class="title">2. Identify critical concepts in EEGs</h4>
+	<div class="col-block-2">
+     <img class="mission-icon" src="img/light-bulb.png" />
+	 <h4 class="title">Identify critical concepts in EEGs</h4>
 	 <p>Automatically recognize EEG clinical events, activity, pattern, polarity, and modality.</p>
 	</div>
+   
+   <!-- end of column-section first row -->
+   <!--             -->
+   </div>
+    
+   <!-- start of column-section, first row -->
+   <!--				-->
+   <div class="column-section page-size">
 	 
-	<!-- Goal 3 Column -->
-	<!-- second column -->
+	<!-- Goal 3 block -->
+	<!-- second row -->
 	<!--				-->
-	<div class="col-block-4">
-	 <h4 class="title">3. Retrieval system</h4>
+	<div class="col-block-2">
+     <img class="mission-icon" src="img/software.png" />
+	 <h4 class="title">Retrieval system</h4>
 	 <p>Create a patient cohort retrieval system where users can automatically access specific relevant EEG data</p>
 	</div>
 	 
-	<!-- Goal 4 Column -->
-	<!-- second column -->
+	<!-- Goal 4 block -->
+	<!-- second row -->
 	<!--				-->
-	<div class="col-block-4">
-	 <h4 class="title">4. Validation</h4>
+	<div class="col-block-2">
+     <img class="mission-icon" src="img/checklist.png" />
+	 <h4 class="title">Validation</h4>
 	 <p>Extensive and rigorous evaluation of our retrieval system with medical experts and physicians to ensure quality.</p>
 	</div>
 
-   <!-- end of column-section div -->
+   <!-- end of column-section second-row -->
    <!--				-->
    </div>
 	
