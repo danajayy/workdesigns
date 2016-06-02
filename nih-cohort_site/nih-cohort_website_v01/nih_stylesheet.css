@@ -263,7 +263,7 @@ ul li {
 ******************************************************************************/
  
 /* 
- * Trying to figure out why need an empty CSS block for the proj-goal
+ * Trying to figure out why need an empty CSS block for the page-content
  * section to get the CSS styling.
  */
  
@@ -272,9 +272,9 @@ ul li {
 }
 
 /*
- * This applies the styling to all the elements in the proj-goal section. Slight
+ * This applies the styling to all the elements in the page-content section. Slight
  * padding on the right of text to balance the indentation on the left. (For aesthetics)
- * This also makes the background of the proj-goal section have a light gray background.
+ * This also makes the background of the page-content section have a light gray background.
  */
 
 #page-content {
@@ -287,7 +287,7 @@ ul li {
 }
 
 /*
- * This styles the title of the proj-goal section. Defines the
+ * This styles the title of the page-content section. Defines the
  * font size and some spacing.
  */
 
@@ -299,7 +299,7 @@ ul li {
 }
 
 /*
- * This changes the font size of the text in the proj-goal section.
+ * This changes the font size of the text in the page-content section.
  * A little bit of spacing around the text to center content more in the container.
  */
 
@@ -505,8 +505,7 @@ ul li {
 * Section 08: Column-section section styling
 *
 * This section contains the styling for the column-section section of the webpage.
-* (Further information and contact information) The font-styling, background color,
-* height of section, and some margin adjustments are done.
+* The font-styling, background color, height of section, and some margin adjustments are done.
 ******************************************************************************/
  
 /*
