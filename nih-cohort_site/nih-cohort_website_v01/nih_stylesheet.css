@@ -15,12 +15,19 @@
  *			 Section 09: Footer section styling
  */
  
- /******************************************************************************
-  * Section 01: Reset margins, padding, and define size of webpages
-  *
-  * This section resets all the margins and padding and defines the webpage size
-  *****************************************************************************/
+/******************************************************************************
+ * Section 01: Reset margins, padding, and define size of webpages
+ *
+ * This section resets all the margins and padding, imports the website's fonts
+ * and defines the webpage size
+ *****************************************************************************/
+
+/*
+ * This imports the Jura and Open Sans font for the website from Google fonts
+ */
  
+@import url(https://fonts.googleapis.com/css?family=Jura|Open+Sans:400,600);
+  
 /* 
  * This resets the margins for the entire html document so elements
  * can appear all the way to the top of browser page. Helps with the 
