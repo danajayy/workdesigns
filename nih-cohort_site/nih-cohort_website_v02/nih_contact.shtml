@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+ <html>
+ 
+  <!-- start of head element section -->
+  <!--				-->
+  <head>
+  
+   <title>NIH Cohort Contact</title>
+  
+   <!-- linking CSS file nih_stylesheet.css -->
+   <!--				-->
+   <link type="text/css" rel="stylesheet" href="nih_stylesheet.css"/>
+  
+  <!-- end of head element section -->
+  <!--				-->
+  </head>
+ 
+  <!-- start of body element section -->
+  <!--				-->
+  <body>
+  
+   <!-- navigation bar -->
+   <!--				-->
+   <div id="nav">
+	 
+	<!-- 6 buttons in nav section -->
+	<!-- 				-->
+	  
+	<!-- page-size div to contain contents within 800px width -->
+	<!--				-->
+	<div class="page-size">
+	
+	 <!-- Project Title -->
+	 <!-- placeholder for now, this is where the logo will go -->
+	 <!--				-->
+	 <p class="title" id="logo">NIH Cohort</p>
+	   
+	 <!-- Proposals Link -->
+	 <!-- sixth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_contact.shtml"><p>Contact</p></a>
+	 </div>
+	   
+	 <!-- Resources link -->
+	 <!-- fifth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_resources.shtml"><p>Resources</p></a>
+	 </div>
+	   
+	 <!-- Publications link -->
+	 <!-- fourth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_publications.shtml"><p>Publications</p></a>
+	 </div>
+	   
+	 <!-- Team link -->
+	 <!-- third column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_team.shtml"><p>Team</p></a>
+	 </div>
+	   
+	 <!-- Mission link -->
+	 <!-- second column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_mission.shtml"><p>Mission</p></a>
+	 </div>
+	   
+	 <!-- Home link -->
+	 <!-- first column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_index.shtml"><p>Home</p></a>
+	 </div>
+	   
+	<!-- end of page-size div -->
+	<!--				-->
+	</div>
+	  
+   <!-- end of nav section -->
+   <!--				-->
+   </div>
+  
+   <!-- start of header section -->
+   <!--			-->
+   <div id="header">
+	 
+	<!-- subtitle of slogan here -->
+	<!--				-->
+	<h4 class="title">Contact</h4>
+	 
+   <!-- end of header div -->
+   <!--				-->
+   </div>
+	
+   <!-- page-content section -->
+   <!-- 				-->
+   <div id="page-content">
+	
+    <!-- start of page-size div -->
+	<!-- need this to contain content within 800px -->
+	<!--				-->
+	<div class="page-size">
+	 
+	 <p>Our lab facilities are located at Temple University and University of Texas at Dallas.</p>
+	 <p>For questions and comments, please contact either of the PIs:</p>
+	 
+	 <!-- listing PIs using unordered list -->
+	 <!--				-->
+	 <ul>
+	  <li>Dr. Iyad Obeid (iobeid@temple.edu)</li>
+	  <li>Dr. Joseph Picone (joseph.picone@gmail.com)</li>
+	  <li>Professor Sanda Harabagiu (sanda@hlt.utdallas.edu)</li>
+	 </ul>
+	  
+	<!-- end of page-size div -->
+	<!--				-->
+	</div>
+	  
+   <!-- end of page-content section -->
+   <!--				-->
+   </div>
+	 
+   <!-- start of column-section -->
+   <!--				-->
+   <div class="column-section page-size">
+	
+	<!-- TU Address -->
+	<div class="col-block-2">
+	 <h4 class="title">Temple University</h4>
+	 <p>1947 North 12th Street</br>Philadelphia, Pennsylvania, 19122</p>
+	</div>
+	
+	<!-- UT Dallas Address -->
+	<div class="col-block-2">
+	 <h4 class="title">University of Texas at Dallas</h4>
+	 <p>Office of Sponsored Projects, AD15</br>800 West Campbell Road</br>Richardson, Texas, 75080</p>
+	</div>
+ 
+   <!-- end of column-section div -->
+   <!--				-->
+   </div>
+	
+   <!-- start of footer div -->
+   <!--				-->
+   <div id="footer">
+	
+	<p class="page-size">Insert any copyright information here</br><span id="design">Website designed by Dana Joaquin</span></p>
+	
+   <!-- end of footer -->
+   <!--				-->
+   </div>
+ 
+  <!-- end of body element section -->
+  <!-- 					-->
+  </body>
+  
+ </html>
+ 
+ <!-- end of nih_contact.html file -->

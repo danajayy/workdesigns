@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+ <html>
+ 
+  <!-- Publications Page for the NIH Cohort Website -->
+  <!--				-->
+ 
+  <!-- start of head element section -->
+  <!--				-->
+  <head>
+  
+   <title>NIH Cohort Publications</title>
+  
+   <!-- linking CSS file nih_stylesheet.css -->
+   <!--				-->
+   <link type="text/css" rel="stylesheet" href="nih_stylesheet.css"/>
+  
+  <!-- end of head element section -->
+  <!--				-->
+  </head>
+ 
+  <!-- start of body element section -->
+  <!--				-->
+  <body>
+  
+   <!-- navigation bar -->
+   <!--				-->
+   <div id="nav">
+	 
+	<!-- 6 buttons in nav section -->
+	<!-- 				-->
+	  
+	<!-- start of page-size div -->
+	<!-- need this to contain content within 800px -->
+	<!--				-->
+	<div class="page-size">
+	  
+	 <!-- Project Title -->
+	 <!-- placeholder for now, this is where the logo will go -->
+	 <!--				-->
+	 <p class="title" id="logo">NIH Cohort</p>
+	   
+     <!-- Contact Link -->
+	 <!-- sixth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_contact.shtml"><p>Contact</p></a>
+	 </div>
+	   
+	 <!-- Resources link -->
+	 <!-- fifth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_resources.shtml"><p>Resources</p></a>
+	 </div>
+	   
+	 <!-- Publications link -->
+	 <!-- fourth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_publications.shtml"><p>Publications</p></a>
+	 </div>
+	   
+	 <!-- Team link -->
+	 <!-- third column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_team.shtml"><p>Team</p></a>
+	 </div>
+	   
+	 <!-- Mission link -->
+	 <!-- second column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_mission.shtml"><p>Mission</p></a>
+	 </div>
+	   
+	 <!-- Home link -->
+	 <!-- first column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_index.shtml"><p>Home</p></a>
+	 </div>
+	   
+	<!-- end of page-size div -->
+	<!--				-->
+	</div>
+	  
+   <!-- end of nav section -->
+   <!--				-->
+   </div>
+  
+   <!-- start of header section -->
+   <!--			-->
+   <div id="header">
+	 
+	<!-- title of webpage -->
+	<!--				-->
+	<h4 class="title">Publications</h4>
+	 
+   <!-- end of header div -->
+   <!--				-->
+   </div>
+	
+   <!-- page-content section -->
+   <!-- 				-->
+   <div id="page-content">
+
+	<p class="page-size">Here is a listing of all our publications for this project to date. Click on the names to access the documents.</p>
+	  
+   <!-- end of page-content section -->
+   <!--				-->
+   </div>
+	 
+   <div class="column-section page-size">
+	
+	<!-- 2 columns in column-section section -->
+	<!--				-->
+	 
+	<!-- Journals Column -->
+	<!-- first column -->
+	<!--				-->
+	<div class="col-block-2">
+	 <h4 class="title">Journals</h4>
+	  
+	 <!-- organizing journal articles in list format -->
+	 <!--				-->
+	 <ul>
+	  <li>Inferring the Interactions of Risk Factors from EHRs</li>
+	  <li>Identifying Patient Cohorts from Electroencephalogram (EEG) Big Data</li>
+	  <li><a href="http://www.isip.piconepress.com/publications/journals_refereed/2016/frontiers_neuroscience/tuh_eeg/">&#8599; The Temple University Hospital EEG Data Corpus </a></li>
+	  <li>Embedding Open-domain Common-Sense Knowledge from Text</a></li>
+	 </ul>
+	</div>
+	 
+	<!-- Presentations Column -->
+	<!-- second column -->
+	<!--				-->
+	<div class="col-block-2">
+	 <h4 class="title">Presentations</h4>
+	 <ul>
+	  <li><a href="http://www.isip.piconepress.com/publications/conference_presentations/2015/nih_bd2k/autoeeg/">&#8599; EEG Event Detection on the TUH EEG Corpus</a></li>
+	  <li><a href="http://www.isip.piconepress.com/publications/conference_presentations/2015/nih_bd2k/qmkg/">&#8599; Generating and Using a Qualified Medical Knowledge Graph for Patient Cohort Retrieval from Big Clinical Electroencephalography (EEG) Data</a></li>
+	  <li><a href="http://www.isip.piconepress.com/publications/conference_presentations/2015/nih_bd2k/cohort/">&#8599; Automatic Discovery and Processing of EEG Cohorts from Clinical Records</a></li>
+	  <li><a href="http://www.isip.piconepress.com/publications/conference_proceedings/2015/ieee_spmb/denergy/">&#8599; Improved EEG Event Classification Using Differential Energy</a></li>
+	  <li> <a href="http://www.isip.piconepress.com/publications/conference_proceedings/2015/ieee_spmb/abnormal/">&#8599; Automated Identification of Abnormal EEGs</a></li>
+	  <li><a href="http://www.isip.piconepress.com/publications/conference_presentations/2015/ieee_spmb/features/">&#8599; A Comparison of Feature Extraction Methods for EEG Signals</a></li>
+	</div>
+
+   <!-- end of column-section div -->
+   <!--				-->
+   </div>
+	
+   <!-- start of footer div -->
+   <!--				-->
+   <div id="footer">
+	
+	<p class="page-size">Insert any copyright information here</br><span id="design">Website designed by Dana Joaquin</span></p>
+	
+   <!-- end of footer -->
+   <!--				-->
+   </div>
+ 
+  <!-- end of body element section -->
+  <!-- 					-->
+  </body>
+  
+ </html>
+ 
+ <!-- end of nih_publications.html file -->

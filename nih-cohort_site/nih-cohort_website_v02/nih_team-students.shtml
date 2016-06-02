@@ -1,0 +1,230 @@
+ <!DOCTYPE html>
+ <html>
+ 
+  <!-- start of head element section -->
+  <!--				-->
+  <head>
+  
+   <title>NIH Cohort Team Students</title>
+  
+   <!-- linking CSS file nih_stylesheet.css -->
+   <!--				-->
+   <link type="text/css" rel="stylesheet" href="nih_stylesheet.css"/>
+  
+  <!-- end of head element section -->
+  <!--				-->
+  </head>
+ 
+  <!-- start of body element section -->
+  <!--				-->
+  <body>
+  
+   <!-- navigation bar -->
+   <!--				-->
+   <div id="nav">
+	 
+	<!-- 6 buttons in nav section -->
+	<!-- 				-->
+	  
+	<!-- start of page-size div -->
+	<!-- need this to contain content within 800px -->
+	<!--				-->
+	<div class="page-size">
+	
+	<!-- Project Title -->
+	<!-- placeholder for now, this is where the logo will go -->
+	<!--				-->
+	<p class="title" id="logo">NIH Cohort</p>
+	   
+	 <!-- Proposals Link -->
+	 <!-- sixth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_contact.shtml"><p>Contact</p></a>
+	 </div>
+	   
+	 <!-- Resources link -->
+	 <!-- fifth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_resources.shtml"><p>Resources</p></a>
+	 </div>
+	   
+	 <!-- Publications link -->
+	 <!-- fourth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_publications.shtml"><p>Publications</p></a>
+	 </div>
+	   
+	 <!-- About link -->
+	 <!-- third column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_team.shtml"><p>Team</p></a>
+	 </div>
+	   
+	 <!-- Mission link -->
+	 <!-- second column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_mission.shtml"><p>Mission</p></a>
+	 </div>
+	   
+	 <!-- Home link -->
+	 <!-- first column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_index.shtml"><p>Home</p></a>
+	 </div>
+	   
+	<!-- end of page-size div -->
+	<!--				-->
+	</div>
+	  
+   <!-- end of nav section -->
+   <!--				-->
+   </div>
+  
+   <!-- start of header section -->
+   <!--			-->
+   <div id="header">
+	 
+	<!-- subtitle of slogan here -->
+	<!--				-->
+	<h4 class="title">Students</h4>
+	 
+   <!-- end of header div -->
+   <!--				-->
+   </div>
+	
+   <!-- page-content section -->
+   <!-- 				-->
+   <div id="page-content">
+	 
+	<p class="page-size">These are the students who work on the NIH Cohort project.</br>
+	<span style="font-size: 0.7em;">* Temple University, ** University of Texas at Dallas</span></p>
+	  
+   <!-- end of page-content section -->
+   <!--				-->
+   </div>
+	
+	
+   <!-- start of column-section -->
+   <!-- This is where the students are listed --> 
+   <!--				-->
+   <div class="column-section page-size">
+	
+	<!-- 3 columns in column-section section -->
+	<!--				-->
+	 
+	<!-- Post Doc Column -->
+	<!-- first column -->
+	<!--				-->
+	<div class="col-block-4">
+	 <h4 class="title">Post Doctorates</h4>
+	  
+	 <!-- organizing postdoc students in list format -->
+	 <!--				-->
+	 <ul>
+	  <li>Scott Yang*</li>
+	 </ul>
+	</div>
+	 
+	<!-- Graduate Column -->
+	<!-- second column -->
+	<!--				-->
+	<div class="col-block-4">
+	 <h4 class="title">Graduates</h4>
+	  
+	 <!-- PhD students list -->
+	 <!--				-->
+	 <p style="margin-bottom: -5px;">PhD Students</p>
+	 <ul>
+	  <li>Meysam Golmohammadi*</li>
+	  <li style="margin-bottom: -5px;">Travis Goodwin**</li>
+	 </ul>
+	  
+	 <!-- Masters students list -->
+	 <!--				-->
+	 <p style="margin-bottom: -5px;">Masters Students</p>
+	 <ul>
+	  <li>Silvia Lopez*</li>
+	  <li>Saeedeh Khoshgoftar*</li>
+	  <li>Ramon Maldonado**</li>
+	 </ul>
+	  
+	</div>	 
+	 
+	<!-- Undergradute Column -->
+	<!-- third column -->
+	<!--				-->
+	<div class="col-block-4">
+	 <h4 class="title">Undergraduates</h4>
+	 <ul>
+	  <li>Samantha Deegan*</li>
+	  <li>Aaron Gross*</li>
+	  <li>Mattheus Guedes De Andrade*</li>
+	  <li>James Riley McHugh*</li>
+	  <li>Patrick Somaru*</li>
+	  <li>Stuart Taylor**</li>
+	  <li>Matthew Thiess*</li>
+     </ul>
+	</div>
+	 
+	<!-- Past Students Column -->
+	<!-- fourth column -->
+	<!--				-->
+	<div class="col-block-4">
+	 <h4 class="title">Past</h4>
+	 
+	 <!-- organizing postdoc students in list format -->
+	 <!--				-->
+	 <ul>
+	  <li>Devin Trejo*</li>
+	 </ul>
+	</div>
+
+   <!-- end of column-section div -->
+   <!--				-->
+   </div>
+	 
+   <!-- subpages section -->
+   <!--				-->
+   <div id="subpages" class="page-size">
+	
+	<!-- Faculty -->
+	<!-- first column -->
+	<!--				-->
+	<div class="subpage-btn">  
+	 <a href="nih_team-faculty.shtml"><h2 class="title">Faculty</h2><p>PIs and directors</p></a>
+	</div>
+	  
+	<!-- back Students -->
+	<!-- second column -->
+	<!--				-->
+	<div class="subpage-btn">
+	 <a href="nih_team.shtml"><h2 class="title">Back</h2><p>Main team page</p></a>
+	</div>
+	  
+   <!-- end of subpages section -->
+   <!--				-->
+   </div> 
+	
+   <!-- start of footer div -->
+   <!--				-->
+   <div id="footer">
+	
+	<p class="page-size">Insert any copyright information here</br><span id="design">Website designed by Dana Joaquin</span></p>
+	
+   <!-- end of footer -->
+   <!--				-->
+   </div>
+ 
+  <!-- end of body element section -->
+  <!-- 					-->
+  </body>
+  
+ </html>
+ 
+ <!-- end of nih_team-students.html file -->

@@ -92,6 +92,11 @@ ul {
 ul li {
  padding-bottom: 6px;
 }
+
+.icon {
+ height: 45px;
+ width: 45px;
+}
  
 /******************************************************************************
 * Section 02: Define default fonts for page
