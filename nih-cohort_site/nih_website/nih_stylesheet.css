@@ -11,7 +11,7 @@
  *			 Section 05: Page content section styling
  *			 Section 06: Faculty Profile styling
  *			 Section 07: Subpages section styling
- *			 Section 08: other-info section styling
+ *			 Section 08: Column-section section styling
  *			 Section 09: Footer section styling
  */
  
@@ -496,47 +496,23 @@ ul li {
 }
  
 /******************************************************************************
-* Section 08: Other-info section styling
+* Section 08: Column-section section styling
 *
-* This section contains the styling for the other-info section of the webpage.
+* This section contains the styling for the column-section section of the webpage.
 * (Further information and contact information) The font-styling, background color,
 * height of section, and some margin adjustments are done.
 ******************************************************************************/
  
-.other-info {
+/*
+ * This styles the entire column-section that will apply to all the 
+ * children elements in this class. The background is made transparent, all
+ * text is centered by default and the margin-top is decreased to save space.
+ */
+ 
+.column-section {
  background-color: transparent;
  text-align: center;
  margin-top: -10px;
-}
-
-/*
- * This makes group div take up as much space it needs, 
- * but still maintains block properties.
- * Add the group div to sections column sections of page
- * where want columns to line up together at top regardless
- * of content size in columns. 
- * Pages that use it are: nih_team-students and nih_publications
- */
-
-.group {
- display: inline-block;
-}
-
-/*
- * resource of clearfix method: https://css-tricks.com/fluid-width-equal-height-columns/
- *
- * group is a clearfix method that allows the parent
- * container to maintain its dimensions despite having
- * only floated children
- */
-
-.group:after{
- visibility: hidden;
- display: block;
- font-size: 0;
- content: " ";
- clear: both;
- height: 0;
 }
  
 /*
@@ -619,7 +595,7 @@ ul li {
  * This makes the titles have a heavier weight to make the title more noticeable. 
  */
  
-.other-info h4 {
+.column-section h4 {
  font-size: 1em;
  margin-top: 5px;
  margin-bottom: -5px;
