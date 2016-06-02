@@ -1,4 +1,5 @@
-/*File: nih_index_v07.html
+/*Files: nih_index.html, nih_mission.html, nih_team.html, nih_team-faculty.html,
+ *		nih_team-students.html, nih_resources.html, nih_publications.html, nih_contact.html
  * 
  * This file provides the fonts and overall layout and design
  * of the NIH COHORT website.
@@ -7,10 +8,11 @@
  *			 Section 02: Define default fonts for page	
  *			 Section 03: Header section styling
  *			 Section 04: Navigation bar section styling
- *			 Section 05: Project goal section styling
- *			 Section 06: Subpages section styling
- *			 Section 07: More-info section styling
- *			 Section 08: Footer section styling
+ *			 Section 05: Page content section styling
+ *			 Section 06: Faculty Profile styling
+ *			 Section 07: Subpages section styling
+ *			 Section 08: other-info section styling
+ *			 Section 09: Footer section styling
  */
  
  /******************************************************************************
@@ -304,6 +306,44 @@ ul li {
 }
 
 /*
+ * This styles the resource list on the resource page.
+ * The list is left-aligned and smaller font to save space.
+ */
+
+#resource-list ul li {
+ text-align: left;
+ font-size: 0.9em;
+}
+
+/* 
+ * This styles the links in page-content section
+ * No text decoration is applied to the links
+ */
+
+#page-content a:link {
+ text-decoration: none;
+ font-weight: 600;
+}
+
+/*
+ * This styles a link when the cursor hovers over it
+ * Only applies to links children of page-content
+ * When hovered, the links are underlined and font color changes
+ */
+
+#page-content a:hover {
+ color: #595959;
+ text-decoration: underline;
+}
+
+/******************************************************************************
+* Section 06: Faculty profile styling
+*
+* This section contains all the styling for the faculty profile pictures for their bios
+* on the nih_team-faculty.html page.
+******************************************************************************/
+
+/*
  * This inserts Dr. Obeid's profile picture in the .profpic class div as a background.
  * This allows more control of resizing the image without distorting the quality and its dimensions.
  */
@@ -367,8 +407,9 @@ ul li {
  font-size: 0.71em;
 }
 
+
 /******************************************************************************
-* Section 06: Subpages section styling
+* Section 07: Subpages section styling
 *
 * This section styles the buttons for the subpages about this project. 
 * These buttons are here if needed if they are different from the ones on
@@ -382,6 +423,7 @@ ul li {
 #subpages {
  display: flex;
  margin-top: 10px;
+ margin-bottom: 10px;
 }
 
 /*
@@ -454,7 +496,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 07: Other-info section styling
+* Section 08: Other-info section styling
 *
 * This section contains the styling for the other-info section of the webpage.
 * (Further information and contact information) The font-styling, background color,
@@ -585,7 +627,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 08: Footer section styling
+* Section 09: Footer section styling
 *
 * This section styles the footer of the page. The footer contains any copyright
 * information, credits, and acknowledgements that need to be displayed.
