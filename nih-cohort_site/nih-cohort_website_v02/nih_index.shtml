@@ -89,10 +89,6 @@
    <!-- start of header section -->
    <!--			-->
    <div id="header">
-	
-	<!-- title of project/site here -->
-	<!--				-->
-	<h1 class="title">NIH Cohort</h1>
 	 
 	<!-- subtitle of slogan here -->
 	<!--				-->
@@ -114,7 +110,7 @@
 	 
    <!-- start of column-section -->
    <!--				-->
-   <div class="column-section page-size">
+   <div class="column-section no-gap page-size">
 	
 	<!-- 2 columns in column-section -->
 	<!--				-->

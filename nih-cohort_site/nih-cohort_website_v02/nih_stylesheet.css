@@ -47,10 +47,7 @@ html, body {
  */
 
 body {
- background-image: url('http://i.imgur.com/ilJ3Bn4.png');
- /* ensures background spans entire width of header */
- background-size: cover;
- background-repeat: no-repeat;
+ background-color: #F5F5F5;
  left: 0;
  right: 0;
  margin-left: auto;
@@ -347,6 +344,11 @@ ul li {
  text-decoration: underline;
 }
 
+#page-content #contacts-list li {
+ display: inline-block;
+ width: 33%;
+}
+
 /******************************************************************************
 * Section 06: Faculty profile styling
 *
@@ -526,6 +528,14 @@ ul li {
 }
  
 /*
+ * This removes the gap between columns for aesthetic purposes.
+ */
+ 
+.no-gap {
+ display: flex;
+} 
+ 
+/*
  * This divides a container into 4 equal width columns
  */
  
@@ -609,6 +619,7 @@ ul li {
  font-size: 1em;
  margin-top: 5px;
  margin-bottom: -5px;
+ padding-bottom: 3px;
  font-weight: 600;
 }
  

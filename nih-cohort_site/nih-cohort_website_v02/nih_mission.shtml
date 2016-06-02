@@ -113,7 +113,7 @@
 	 
    <!-- start of column-section -->
    <!--				-->
-   <div class="column-section page-size">
+   <div class="column-section no-gap page-size">
 	
 	<!-- 4 columns in column-section -->
 	<!--				-->
@@ -147,7 +147,7 @@
 	<!--				-->
 	<div class="col-block-4">
 	 <h4 class="title">4. Validation</h4>
-	 <p>Extensive and rigorous evaluation of our retrieval system with medical experts, physicians and students to ensure quality.</p>
+	 <p>Extensive and rigorous evaluation of our retrieval system with medical experts and physicians to ensure quality.</p>
 	</div>
 
    <!-- end of column-section div -->

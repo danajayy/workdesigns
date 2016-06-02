@@ -105,16 +105,15 @@
 	<!-- need this to contain content within 800px -->
 	<!--				-->
 	<div class="page-size">
-	 
-	 <p>Our lab facilities are located at Temple University and University of Texas at Dallas.</p>
+    
 	 <p>For questions and comments, please contact either of the PIs:</p>
 	 
 	 <!-- listing PIs using unordered list -->
 	 <!--				-->
-	 <ul>
-	  <li>Dr. Iyad Obeid (iobeid@temple.edu)</li>
-	  <li>Dr. Joseph Picone (joseph.picone@gmail.com)</li>
-	  <li>Professor Sanda Harabagiu (sanda@hlt.utdallas.edu)</li>
+	 <ul id="contacts-list">
+	  <li>Dr. Iyad Obeid</br>iobeid@temple.edu</li>
+	  <li>Dr. Joseph Picone</br>joseph.picone@gmail.com</li>
+	  <li>Professor Sanda Harabagiu</br>sanda@hlt.utdallas.edu</li>
 	 </ul>
 	  
 	<!-- end of page-size div -->
