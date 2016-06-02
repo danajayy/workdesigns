@@ -4,7 +4,7 @@
  * This file provides the fonts and overall layout and design
  * of the NIH COHORT website.
  *
- * Contents: Section 01: Reset margins, padding and define size of webpage
+ * Contents: Section 01: Reset margins, padding, and define size of webpage
  *			 Section 02: Define default fonts for page	
  *			 Section 03: Header section styling
  *			 Section 04: Navigation bar section styling
@@ -18,15 +18,8 @@
 /******************************************************************************
  * Section 01: Reset margins, padding, and define size of webpages
  *
- * This section resets all the margins and padding, imports the website's fonts
- * and defines the webpage size
+ * This section resets all the margins and padding, and defines the webpage size.
  *****************************************************************************/
-
-/*
- * This imports the Jura and Open Sans font for the website from Google fonts
- */
- 
-@import url(https://fonts.googleapis.com/css?family=Jura|Open+Sans:400,600);
   
 /* 
  * This resets the margins for the entire html document so elements
@@ -104,6 +97,12 @@ ul li {
 *			regular text: Open Sans
 * For design, choose sans-serif style fonts.
 ******************************************************************************/
+
+/*
+ * This imports the Jura and Open Sans font for the website from Google fonts
+ */
+ 
+@import url(https://fonts.googleapis.com/css?family=Jura|Open+Sans:400,600);
 
 /* 
  * This makes all p tags with 'Open Sans' font by default.
