@@ -138,7 +138,7 @@ ul li {
 
 #header {
  padding: 0px 10px 0px 0px;
- margin-top: 40px;
+ margin-top: 35px;
  margin-bottom: 40px;
  text-align: center;
 }
@@ -271,7 +271,6 @@ ul li {
 
 #page-content {
  margin-top: -8px;
- margin-bottom: 10px;
  padding-top: 10px;
  padding-bottom: 10px;
  padding-left: 15px;
@@ -382,6 +381,7 @@ ul li {
  
 #subpages {
  display: flex;
+ margin-top: 10px;
 }
 
 /*
@@ -408,7 +408,6 @@ ul li {
 #subpages h2 {
  display: inline-block;
  font-size: 1.2em;
- margin-bottom: -10px;
 }
 
 /*
@@ -417,6 +416,7 @@ ul li {
  */
  
 #subpages p {
+ margin-top: -15px;
  font-size: 0.7em;
 }
 
@@ -464,8 +464,21 @@ ul li {
 .other-info {
  background-color: transparent;
  text-align: center;
+ margin-top: -10px;
 }
 
+/*
+ * This makes group div take up as much space it needs, 
+ * but still maintains block properties.
+ * Add the group div to sections column sections of page
+ * where want columns to line up together at top regardless
+ * of content size in columns. 
+ * Pages that use it are: nih_team-students and nih_publications
+ */
+
+.group {
+ display: inline-block;
+}
 
 /*
  * resource of clearfix method: https://css-tricks.com/fluid-width-equal-height-columns/
@@ -482,15 +495,6 @@ ul li {
  content: " ";
  clear: both;
  height: 0;
-}
-
-/*
- * This makes group div take up as much space it needs, 
- * but still maintains block properties.
- */
-
-.group {
- display: inline-block;
 }
  
 /*
