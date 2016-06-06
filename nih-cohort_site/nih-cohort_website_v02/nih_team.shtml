@@ -90,7 +90,7 @@
    <!--			-->
    <div id="header">
 	 
-	<!-- subtitle of slogan here -->
+	<!-- title of webpage -->
 	<!--				-->
 	<h4 class="title">The Team</h4>
 	 
@@ -102,7 +102,7 @@
    <!-- 				-->
    <div id="page-content">
 	 
-	<p class="page-size">Consisting of faculty and students from Temple University (TU) and University of Texas at Dallas (UT Dallas), our team is hardworking and dedicated with extensive knowledge in machine learning, big data analysis, EEGs, and software. Launched in October 2015 by Sanda Harabagiu, Joseph Picone and Iyad Obeid, a project collaboration between Temple University and University of Texas at Dallas. The University of Texas at Dallas team are in charge of automating recognition of critical concepts of EEG reports and the patient cohort retrieval system. The Temple University team are responsible for automatically recognizing and time-aligning the EEG reports and evaluating and optimizing the retrieval system by analyzing the results with medical experts at Temple Hospital and other regional hospitals.</p>
+	<p class="page-size">Launched in October 2015 by Sanda Harabagiu, Joseph Picone and Iyad Obeid, a project collaboration between Temple University and University of Texas at Dallas. The University of Texas at Dallas team are in charge of automating recognition of critical concepts of EEG reports and the patient cohort retrieval system. The Temple University team are responsible for automatically recognizing and time-aligning the EEG reports and evaluating and optimizing the retrieval system.</p>
 	  
    <!-- end of proj-goal section -->
    <!--				-->
@@ -116,14 +116,14 @@
 	<!-- first column -->
 	<!--				-->
 	<div class="subpage-btn">  
-	 <a href="nih_team-faculty.shtml"><h2 class="title">Faculty</h2><p>PIs and directors</p></a>
+	 <a href="nih_team-faculty.shtml"><h2 class="title">Faculty</h2></a>
 	</div>
 	  
 	<!-- Students -->
 	<!-- second column -->
 	<!--				-->
 	<div class="subpage-btn">
-	 <a href="nih_team-students.shtml"><h2 class="title">Students</h2><p>Postdocs, grads, and UGs</p></a>
+	 <a href="nih_team-students.shtml"><h2 class="title">Students</h2></a>
 	</div>
 	  
    <!-- end of subpages section -->

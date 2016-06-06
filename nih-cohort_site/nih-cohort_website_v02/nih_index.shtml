@@ -90,9 +90,10 @@
    <!--			-->
    <div id="header">
 	 
-	<!-- subtitle of slogan here -->
+	<!-- title of webpage -->
+    <!-- for index page, slogan is here instead -->
 	<!--				-->
-	<h4 class="title">Vast collection of EEG data, public for the world to see</h4>
+	<h4 class="title">Vast collection of EEG data. Public for the world to see.</h4>
 	 
    <!-- end of header div -->
    <!--				-->
@@ -119,7 +120,7 @@
 	<!-- first column -->
 	<!--				-->
 	<div class="col-block-4">
-     <img class="icon" src="img/fast-forward.png" />
+     <img class="sm-icon" src="img/fast-forward.png" />
 	 <h4 class="title">Fast</h4>
 	 <p>EEGs are read with automated processing techniques and sorted for quick access.</p>
 	</div>
@@ -128,7 +129,7 @@
 	<!-- second column -->
 	<!--				-->
 	<div class="col-block-4">
-     <img class="icon" src="img/world.png" />
+     <img class="sm-icon" src="img/world.png" />
 	 <h4 class="title">Accessible</h4>
 	 <p>Our data is public to the world, supporting medical diagnoses, research, and studies.</p>
 	</div>
@@ -137,7 +138,7 @@
 	<!-- third column -->
 	<!--				-->
 	<div class="col-block-4">
-     <img class="icon" src="img/check-mark.png" />
+     <img class="sm-icon" src="img/check-mark.png" />
 	 <h4 class="title">Reliable</h4>
 	 <p>Results are heavily tested for validation by our software and medical expert examinations.</p>
 	</div>
@@ -146,7 +147,7 @@
 	<!-- fourth column -->
 	<!--				-->
 	<div class="col-block-4">
-     <img class="icon" src="img/magnify-glass.png" />
+     <img class="sm-icon" src="img/magnify-glass.png" />
 	 <h4 class="title">Organized</h4>
 	 <p>Sorted in cohort identification system to easily compare EEG data with other similar ones.</p>
 	</div>

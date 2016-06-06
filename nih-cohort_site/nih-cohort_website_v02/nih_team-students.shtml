@@ -197,14 +197,14 @@
 	<!-- first column -->
 	<!--				-->
 	<div class="subpage-btn">  
-	 <a href="nih_team-faculty.shtml"><h2 class="title">Faculty</h2><p>PIs and directors</p></a>
+	 <a href="nih_team-faculty.shtml"><h2 class="title">Faculty</h2></a>
 	</div>
 	  
 	<!-- back Students -->
 	<!-- second column -->
 	<!--				-->
 	<div class="subpage-btn">
-	 <a href="nih_team.shtml"><h2 class="title">Back</h2><p>Main team page</p></a>
+	 <a href="nih_team.shtml"><h2 class="title">Back</h2></a>
 	</div>
 	  
    <!-- end of subpages section -->

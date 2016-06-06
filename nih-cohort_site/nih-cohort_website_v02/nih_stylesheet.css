@@ -9,10 +9,11 @@
  *			 Section 03: Header section styling
  *			 Section 04: Navigation bar section styling
  *			 Section 05: Page content section styling
- *			 Section 06: Faculty Profile styling
- *			 Section 07: Subpages section styling
- *			 Section 08: Column-section section styling
- *			 Section 09: Footer section styling
+ *           Section 06: Graphics styling
+ *			 Section 07: Faculty Profile styling
+ *			 Section 08: Subpages section styling
+ *			 Section 09: Column-section section styling
+ *			 Section 10: Footer section styling
  */
  
 /******************************************************************************
@@ -28,41 +29,62 @@
 @import url(https://fonts.googleapis.com/css?family=Jura|Open+Sans:400,600); 
  
 /* 
- * This resets the margins for the entire html document so elements
+ * This section resets the margins for the entire html document so elements
  * can appear all the way to the top of browser page. Helps with the 
  * design and aesthetics. Makes the entire html document span width of page.
  */
  
 html, body {
+    
+ /* Resets the margins and padding on entire page */
  padding: 0;
  margin: 0;
+ 
+ /* Makes sure entire page spans whole width of browser window */
  width: 100%;
 }
 
 /* 
- * This section sets the background image of the entire page.
- * Makes sure that the background image is fixed, does not repeat
- * and covers the entire webpage. In addition, all contents
- * are centered on the page.
+ * This section sets the background of the entire website.
+ * This also centers all the contents on the page as well and keeps
+ * the entire page fixed so no scrolling happens.
  */
 
 body {
+    
+ /* Defines background color */
  background-color: #F5F5F5;
+ 
+ /* 
+  * Makes everything centered. This is needed since the body
+  * and all of its children will be fixed elements. Need to resets
+  * left and right and explicitly define margin-left and margin-right.
+  */
  left: 0;
  right: 0;
  margin-left: auto;
  margin-right: auto;
+ 
+ /* Makes the page not scroll and fixes position of elements */
  position: fixed;
 }
  
 /* 
- * This declares the required size of 800x600 for the entire webpage
+ * This class declares the required width of 800px for the entire webpage
  * where all the contents and graphics must be contained in.
- * Made the max width 700px to be safe everything is contained within the max
+ * Made the max width 750px to be safe everything is contained within the max.
  */
 
 .page-size {
+    
+ /* Defines max width of page contents */
  width: 750px; 
+ 
+ /* 
+  * This makes the contents centered. Need to reset left and right
+  * and explicitly margin-left and margin-right to be auto since
+  * contents are fixed .
+  */
  left: 0;
  right: 0;
  margin-left: auto;
@@ -70,51 +92,34 @@ body {
 }
 
 /*
- * This styles all the unordered lists that appear on the website. 
+ * This ul selector styles all the unordered lists that appear on the website. 
  * The bullet points are removed for aesthetic purposes. The margin is made -50px
  * to the left to compensate the space of the bullet points.
  */
 
 ul {
+ 
+ /* Removes the bullets in the unordered list. */
  list-style: none;
+ 
+ /* Makes the font-size of unordered list smaller than default size. */
  font-size: 0.9em;
+ 
+ /* Centers text */
  text-align: center;
+ 
+ /* Moves listed elements to left to compensate the space left for the bullets. */
  margin-left: -50px;
 }
 
 /*
- * This puts a little bit of space between each bullet element of an unordered list.
+ * This selector puts a little bit of space between each bullet element of an unordered list.
  */
 
 ul li {
+    
+ /* A little spacing underneath each listed element. */
  padding-bottom: 6px;
-}
-
-.icon {
- height: 45px;
- width: 45px;
-}
-
-.mission-icon {
- height: 65px;
- width: 65px;
- margin-bottom: -10px;
-}
-
-.contacts-image {
- height: 100px;
- width: 100%;
- background-size: cover;
- background-repeat: no-repeat;
- background-position: fixed;
-}
-
-#TUCOE-pic{
- background-image: url('./img/temple-coe-bldg.gif');
-}
-
-#UTD-pic {
- background-image: url('./img/UT_Dallas_Student_Service_Building.jpg')
 }
  
 /******************************************************************************
@@ -137,13 +142,17 @@ ul li {
  */
  
 * {
+ 
+ /* Declares the default font of the entire website to be Open Sans */
  font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
+ 
+ /* Declares the default font color to be black. */
  color: black;
 }
  
  
 /* 
- * This makes all "title" classes with the default font 'Jura'.
+ * This class makes all "title" classes with the default font 'Jura'.
  * All header tags are classed in "title" since each header tag
  * in each of the sections have their own styling.
  * If the font is not available, then the page will use the 
@@ -152,7 +161,11 @@ ul li {
  */
  
 .title {
+    
+ /* Makes all .title classes with font Jura. */
  font-family: 'Jura', sans-serif;
+ 
+ /* Makes all .title classes with font color black. */
  color: black;
 }
  
@@ -169,22 +182,16 @@ ul li {
  */
 
 #header {
+ 
+ /* This resets the top, bottom, and left padding, while adding a little space on the right. */
  padding: 0px 10px 0px 0px;
+ 
+ /* Adds space between the elements above and below the header section of page. */
  margin-top: 35px;
- margin-bottom: 40px;
+ margin-bottom: 30px;
+ 
+ /* Centers all text in header section. */
  text-align: center;
-}
- 
-/*
- * This changes the font size of the h1 tag (title of webpage).
- * Also moves it to the right a little bit for aesthetics.
- * Decrease margin-bottom so subtitle is closer to it
- */ 
- 
-#header h1 {
- font-size: 3.5em;
- margin-top: -15px;
- margin-bottom: -20px;
 }
  
 /*
@@ -224,10 +231,15 @@ ul li {
  */
  
 #nav {
+    
+ /* Defines dimensions of nav bar. */
  height: 35px;
  width: 100%;
- /* removes the white space gap between the nav links */
+ 
+ /* removes the white space gap between the nav links. */
  display: flex;
+ 
+ /* Makes background color of nav bar a light and transparent black. */
  background-color: rgba(0, 0, 0, 0.2);
 }
  
@@ -237,12 +249,24 @@ ul li {
  */
  
 .nav-btn {
+    
+ /* Makes the nav bar buttons float right/right alignmened. */
  float: right;
+ 
+ /* Makes the buttons take as much space needed. */
  display: inline-block;
+ 
+ /* Centers text inside buttons. */
  text-align: center;
+ 
+ /* Makes text in buttons smaller. */
  font-size: 0.7em;
+ 
+ /* Defines dimensions of nav bar buttons. */
  width: 80px;
  height: 31px;
+ 
+ /* Spacing underneath the text in the buttons. */
  padding-bottom: 4px;
 }
  
@@ -296,17 +320,21 @@ ul li {
 }
 
 /*
- * This applies the styling to all the elements in the page-content section. Slight
+ * This class applies the styling to all the elements in the page-content section. Slight
  * padding on the right of text to balance the indentation on the left. (For aesthetics)
  * This also makes the background of the page-content section have a light gray background.
  */
 
 #page-content {
- margin-top: -8px;
+ 
+ /* Adds spacing around the text in page-content so text will not go all the way
+  * to edge of container. This makes the text look more centered. */
  padding-top: 10px;
  padding-bottom: 10px;
  padding-left: 15px;
  padding-right: 15px;
+ 
+ /* Makes the background color a very faint and transparent black. */
  background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -372,7 +400,93 @@ ul li {
 }
 
 /******************************************************************************
-* Section 06: Faculty profile styling
+* Section 06: Graphics styling
+*
+* This section contains the styling for all the images in the page contents
+* across the website. 
+******************************************************************************/
+
+/*
+ * This class changes the image size to be 45x45. Images made to this
+ * size are considered small-sized icons.
+ */
+ 
+.sm-icon {
+    
+ /* Defining size of the small-sized image. */
+ height: 45px;
+ width: 45px;
+}
+
+/*
+ * This class changes the image size to be 65x65. Images made to this
+ * size are considered medium-sized icons.
+ */
+
+.md-icon {
+    
+ /* Defining the size of the medium-sized icon. */
+ height: 65px;
+ width: 65px;
+ 
+ /* Removes some space underneath. */
+ margin-bottom: -10px;
+}
+
+/*
+ * This class defines the size of the div that will contain the buildings images
+ * on the contacts page. A div will contain the image because it will not distort
+ * the original image dimensions. The images will be defined as the background for 
+ * this class. 
+ * The background images used for this class will span the entire size of div,
+ * will not repeat, and will be fixed imaged.
+ * This class will define how the background image will look like.
+ * The image used will come from the id the div will be labeled as.
+ */
+
+.contacts-image {
+    
+ /* Defining dimensions of div, which defines size of image. */
+ height: 100px;
+ width: 100%;
+ 
+ /* Add a little bit of spacing above the picture */
+ margin-top: 5px;
+ 
+ /* Makes sure background image spans entire size of div. */
+ background-size: cover;
+ 
+ /* The background image will not repeat */
+ background-repeat: no-repeat;
+ 
+ /* Background is fixed to keep image consistent. */
+ background-position: fixed;
+}
+
+/*
+ * This id makes the Temple CoE building as the background image
+ * for the class .contacts-image.
+ */
+ 
+#TUCOE-pic{
+    
+ /* insert Temple CoE building as background for .contacts-image */
+ background-image: url('./img/temple-coe-bldg.gif');
+}
+
+/*
+ * This id makes the UT Dallas building as the background image for
+ * the class .contacts-image.
+ */
+ 
+#UTD-pic {
+    
+ /* insert UT Dallas building as backgrounf for .contacts-image */
+ background-image: url('./img/UT_Dallas_Student_Service_Building.jpg');
+}
+
+/******************************************************************************
+* Section 07: Faculty profile styling
 *
 * This section contains all the styling for the faculty profile pictures for their bios
 * on the nih_team-faculty.html page.
@@ -384,7 +498,7 @@ ul li {
  */
  
 #obeidpic {
- background-image: url('http://i.bnet.com/blogs/iyad-obeid-200x300.jpeg');
+ background-image: url('./img/iobeid.jpeg');
 }
 
 /*
@@ -393,7 +507,7 @@ ul li {
  */
  
 #piconepic {
- background-image: url('https://media.licdn.com/media/AAEAAQAAAAAAAAVzAAAAJGY0MzZmNTQ3LWFjZDQtNDQwYS04MzMxLWRiOGRhNDg3MGFjMg.jpg');
+ background-image: url('./img/jpicone.jpg');
 }
 
 /*
@@ -402,7 +516,7 @@ ul li {
  */
  
 #harabagiupic {
- background-image: url('https://www.utdallas.edu/chairs/profiles/images/Harabagiu_1.jpg');
+ background-image: url('./img/sharabagiu.jpg');
 }
 
 /*
@@ -412,12 +526,24 @@ ul li {
  */
 
 .profpic {
+    
+ /* Makes the picture float left of bio. */
  float: left;
+ 
+ /* Defines size of profile picture. */
  height: 80px;
  width: 80px;
+ 
+ /* Makes the background picture span size of container. */
  background-size: cover;
+ 
+ /* Background image should not repeat inside the container. */
  background-repeat: no-repeat;
+ 
+ /* Makes the container a circular shape. */
  border-radius: 100%;
+ 
+ /* Adds spacing to the right of image between picture and bio. */
  margin-right: 5px;
 }
 
@@ -444,7 +570,7 @@ ul li {
 
 
 /******************************************************************************
-* Section 07: Subpages section styling
+* Section 08: Subpages section styling
 *
 * This section styles the buttons for the subpages about this project. 
 * These buttons are here if needed if they are different from the ones on
@@ -452,13 +578,15 @@ ul li {
 ******************************************************************************/
  
 /* 
- * This removes the whitespace between the subpage buttons.
+ * This removes the whitespace between the subpage buttons by
+ * converting the elements to flex boxes. Some spacing added at
+ * the top and bottom of the subpages section.
  */
  
 #subpages {
- display: flex;
  margin-top: 10px;
  margin-bottom: 10px;
+ display: flex;
 }
 
 /*
@@ -468,12 +596,29 @@ ul li {
  */
  
 #subpages .subpage-btn {
+    
+ /* Sets button color. */
  background-color: #b3b3b3;
+ 
+ /* 
+  * Makes the button only take as much space they need,
+  * but still maintain block properties. No longer span entire
+  * width of the page.
+  */
  display: inline-block;
- width: 150px;
+ 
  margin: auto;
+ 
+ /* Sets width of button */
+ width: 150px;
+ 
+ /* Add space above button title for aesthetics */
  padding-top: 8px;
+ 
+ /* Centers text inside button */
  text-align: center;
+ 
+ /* Gives button rounded corners */
  border-radius: 23px;
 }
 
@@ -531,7 +676,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 08: Column-section section styling
+* Section 09: Column-section section styling
 *
 * This section contains the styling for the column-section section of the webpage.
 * The font-styling, background color, height of section, and some margin adjustments are done.
@@ -570,66 +715,111 @@ ul li {
 }
 
 /*
- * This divides a container into 2 equal width columns
+ * This class declares a column that is half the size of its container. 
+ * This class is used for containers where there will be 2 columns.
+ * This class floats so that the columns are vertically aligned.
+ * The 2 columns are centered in their container. 
+ * Their size is 45% of the container size to make sure there is enough space for both columns.
+ * Spacing added on the left to put space between columns. Some 
+ * spacing at the top for space between the contents above the columns.
  */
 
 .col-block-2 {
+    
+ /* Makes the columns float left to vertically align the columns. */
  float: left;
+ 
+ /* Centers the columns in the middle of their container. */
  margin: auto;
+ 
+ /* 
+  * Makes the columns have width the size of 45% of container. 
+  * Want it less than 50% to make sure the columns fit on same line.
+  */
  width: 45%;
+ 
+ /* Spacing on top to add space between the contents above. */
  padding-top: 15px;
- padding-left: 5%;
+ 
+ /* Spacing on left to add space between the 2 columns. */
+ padding-left: 3%;
 }
 
 /* 
- * This makes the column text slightly smaller to save space
+ * This makes the column text slightly smaller to save space.
  */
 
 .col-block-4 p, .col-block-2 p {
+    
+ /* Makes p tag text smaller. */
  font-size: 0.8em;
 }
 
 /* 
- * This styles unordered list children of .col-block-2
+ * This class styles unordered list children of .col-block-2
+ * The bullet points are removed, there is padding added to the
+ * right, text is centered, and font size is smaller.
  */
  
 .col-block-2 ul {
+    
+ /* Removes the bullet points from unordered list. */
  list-style: none;
+ 
+ /* Makes font size of unordered list smaller. */
  font-size: 0.7em;
+ 
+ /* Centers text. */
  text-align: center;
+ 
+ /* Adds space to right of unordered list. */
  padding-right: 10px;
 }
 
 /* 
- * This styles unordered list children of .col-block-4
+ * This class styles unordered list children of .col-block-4
  * The bullet points are removed, there is padding-left
- * to position the text in the center and the font-size is smaller
+ * to position the text in the center and the font-size is smaller.
  */
  
 .col-block-4 ul {
+    
+ /* Adds space to left of unordered list. */
  padding-left: 55px;
+ 
+ /* Removes the bullet points from unordered list. */
  list-style: none;
+ 
+ /* Centers text. */
  text-align: center;
+ 
+ /* Makes font size of unordered list smaller. */
  font-size: 0.7em;
 }
 
 /* 
- * This styles the link children of col-block-2
- * No text decoration is applied to the links
+ * This styles the link children of col-block-2.
+ * No text decoration is applied to the links.
  */
 
 .col-block-2 a:link {
+    
+ /* Removes any text decoration to links. */
  text-decoration: none;
 }
 
 /*
- * This styles a link when the cursor hovers over it
- * Only applies to links children of col-block-2
- * When hovered, the links are underlined and font color changes
+ * This styles a link when the cursor hovers over it.
+ * Only applies to links children of col-block-2.
+ * When hovered, the links are underlined and font color changes.
  */
 
 .col-block-2 a:hover {
+    
+ /* Changes font color of link when hovered. */
  color: #595959;
+ 
+ /* Makes links underlined when hovered. */
  text-decoration: underline;
 }
  
@@ -638,15 +828,22 @@ ul li {
  */
  
 .column-section h4 {
+    
+ /* Makes font size standard size. */
  font-size: 1em;
+ 
+ /* Add spacing above header. */
  margin-top: 5px;
+ 
+ /* Remove spacing below header. */
  margin-bottom: -5px;
- padding-bottom: 3px;
+ 
+ /* Makes header text bold. */
  font-weight: 600;
 }
  
 /******************************************************************************
-* Section 09: Footer section styling
+* Section 10: Footer section styling
 *
 * This section styles the footer of the page. The footer contains any copyright
 * information, credits, and acknowledgements that need to be displayed.
@@ -657,18 +854,29 @@ ul li {
  */
  
 #footer {
+ 
+ /* Makes the footer move all the way to bottom, away from other elements. */
  clear: both;
+ 
+ /* Makes background color a very light and transparent black. */
  background-color: rgba(0, 0, 0, 0.1);
+ 
+ /* Makes the font size in footer text smaller than rest of page. */
  font-size: 0.7em;
- /* This makes the footer span rest of webpage height */
+ 
+ /* This makes the footer span rest of webpage height. */
  height: 100vh;
+ 
+ /* Makes footer text align to right. */
  text-align: right;
 }
  
 /*
- * This make the design credit text a very transparent white so it won't be so noticeable.
+ * This id make the design credit text a very transparent white so it won't be so noticeable.
  */
  
 #design {
+    
+ /* Makes font color a very light and transparent black. */
  color: rgba(0, 0, 0, 0.3)
 }
