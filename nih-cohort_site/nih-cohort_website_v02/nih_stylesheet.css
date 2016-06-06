@@ -530,6 +530,8 @@ ul li {
  */
  
 #obeidpic {
+    
+ /* Defines Dr. Obeid's profile picture as background image. */
  background-image: url('./img/iobeid.jpeg');
 }
 
@@ -539,6 +541,8 @@ ul li {
  */
  
 #piconepic {
+    
+ /* Define Dr. Picone's profile picture as background image. */
  background-image: url('./img/jpicone.jpg');
 }
 
@@ -548,6 +552,8 @@ ul li {
  */
  
 #harabagiupic {
+    
+ /* Defines Dr. Harabagiu profile picture as background image. */
  background-image: url('./img/sharabagiu.jpg');
 }
 
@@ -685,9 +691,17 @@ ul li {
  */
 
 #subpages a {
+    
+ /* Makes links be blocks. */
  display: block;
+ 
+ /* Makes link take up entire height of container. */
  height: 100%;
+ 
+ /* Removes any text decoration to link text. */
  text-decoration: none;
+ 
+ /* Removes some spacing above link. */
  margin-top: -10px;
 }
 
@@ -696,6 +710,8 @@ ul li {
  */
 
 #subpages a:visited {
+    
+ /* Removes any text decoration to visited links. */
  text-decoration: none;
 }
  
@@ -706,8 +722,14 @@ ul li {
  */
  
 #subpages .subpage-btn:hover {
+    
+ /* Changes color of button when cursor hovers over it. */
  background-color: #d9d9d9;
+ 
+ /* Makes button keep its rounded corners. */
  border-radius: 23px;
+ 
+ /* Makes background color change take 0.5 seconds. */
  transition: background-color .5s;
 }
  
@@ -731,21 +753,21 @@ ul li {
 }
  
 /*
- * This removes the gap between columns for aesthetic purposes.
- */
- 
-.no-gap {
- display: flex;
-} 
- 
-/*
  * This divides a container into 4 equal width columns
  */
  
 .col-block-4{
+    
+ /* Make columns float to the left. */
  float: left;
+ 
+ /* Center the columns in the middle of container. */
  margin: auto;
+ 
+ /* Make width of columns 21% of width of container. */
  width: 21%;
+ 
+ /* Add space to left and top of column. */
  padding-top: 15px;
  padding-left: 22px;
 }
