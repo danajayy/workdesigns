@@ -93,7 +93,7 @@
 	<!-- title of webpage -->
     <!-- for index page, slogan is here instead -->
 	<!--				-->
-	<h4 class="title">Vast collection of EEG data. Public for the world to see.</h4>
+	<h4 class="title">Vast collection of EEG data</br> Public for the world to see</h4>
 	 
    <!-- end of header div -->
    <!--				-->
@@ -102,8 +102,16 @@
    <!-- start of page-content section -->
    <!-- 				-->
    <div id="page-content">
-	 
-	<p class="page-size" style="font-weight: 600;">With our expert knowledge in machine learning, EEGs, big data analytics, and software, we strive to bring a huge collection of EEG data public for the world to use to advance their research and provide more confident and better patient diagnoses.</p>
+   
+    <!-- start of page-size div -->
+    <!--                -->
+	<div class="page-size">
+
+	 <p style="font-weight: 600;">With our expert knowledge in machine learning, EEGs, big data analytics, and software, we strive to bring a huge collection of EEG data public for the world to use to advance their research and provide more confident and better patient diagnoses.</p>
+     
+    <!-- end of page-size div -->
+    <!--                -->
+    </div>
 	  
    <!-- end of page-content section -->
    <!--				-->

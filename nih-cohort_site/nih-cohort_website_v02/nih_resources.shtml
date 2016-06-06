@@ -112,7 +112,7 @@
 	 
 	 <div id="resource-list">
 	  <ul>
-	   <li><a href="https://www.isip.piconepress.com/publications/reports/2016/nih/cohort_retrieval/">&#8599; Project Report May 2016</a></br> The 2016 report documenting information, project status, accomplishments, findings, and future work of the project.</li>
+	   <li><a class="title" href="https://www.isip.piconepress.com/publications/reports/2016/nih/cohort_retrieval/">&#8599; Project Report May 2016</a></br> The 2016 report documenting information, project status, accomplishments, findings, and future work of the project.</li>
 	  </ul>
 	 </div>
 	  

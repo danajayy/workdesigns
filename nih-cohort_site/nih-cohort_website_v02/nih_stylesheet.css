@@ -46,8 +46,14 @@ html, body {
 
 body {
     
- /* Defines background color */
- background-color: #F5F5F5;
+ /* Defines background image. */
+ background-image: url('./img/nih-background.png');
+ 
+ /* Makes background image span entire length of webpage. */
+ background-size: cover;
+ 
+ /* Makes sure background does not repeat. */
+ background-repeat: no-repeat;
  
  /* 
   * Makes everything centered. This is needed since the body
@@ -189,7 +195,7 @@ ul li {
 }
  
 /*
- * This changes the font size of the h4 tag (subtitle of webpage).
+ * This changes the font size of the h4 tag.
  * Also moves it to the right a little bit for aesthetics.
  */
  
@@ -212,11 +218,23 @@ ul li {
  */
 
 #logo {
+    
+ /* Makes the logo take up only as much space needed. */
  display: inline-block;
+ 
+ /* Make logo float to left of nav bar. */
  float: left;
+ 
+ /* Right now, logo is just text, so centers text in block container. */
  text-align: center;
+ 
+ /* Defining height of logo. */
  height: 31px;
+ 
+ /* Padding on top to center logo vertically. */
  padding-top: 10px;
+ 
+ /* Makes logo go all the way to top of nav bar. */
  margin-top: auto;
 }
  
@@ -271,7 +289,11 @@ ul li {
  */
  
 #nav .nav-btn:hover {
+    
+ /* Changes button color when cursor hovers over it. */
  background-color: rgba(255, 255, 255, 0.4);
+ 
+ /* Slows down background color transition by 0.5 seconds. */
  transition: background-color .5s;
 }
 
@@ -282,8 +304,14 @@ ul li {
  */
 
 #nav a {
+    
+ /* Makes links in nav bars blocks. */
  display: block;
+ 
+ /* Makes links the height of the nav bar. */
  height: 100%;
+ 
+ /* Removes any link text decoration. */
  text-decoration: none;
 }
 
@@ -293,6 +321,8 @@ ul li {
  */
 
 #nav a:visited {
+    
+ /* Rmoves any text decoration to visited links. */
  text-decoration: none;
 }
 
@@ -345,15 +375,15 @@ ul li {
 }
 
 /*
- * This changes the font size of the text in the page-content section.
- * A little bit of spacing around the text to center content more in the container.
+ * This changes the font size, font weight, and alignment of p text in page-content id. 
  */
 
 #page-content p {
- padding-left: 8px;
- padding-right: 8px;
+    
+ /* Makes text in p tags smaller. */
  font-size: 0.9em;
- font-weight: 400;
+ 
+ /* Centers text of p tags. */
  text-align: center;
 }
 
@@ -363,17 +393,35 @@ ul li {
  */
 
 #resource-list ul li {
+    
+ /* Makes text of listed item align on the left. */
  text-align: left;
+ 
+ /* Makes the font size of listed items smaller. */
  font-size: 0.9em;
 }
 
 /* 
- * This styles the links in page-content section
- * No text decoration is applied to the links
+ * This makes the links on the resource page have a bigger font size. 
+ */
+
+#resource-list a{
+    
+ /* Increasees font size of link text on resource page. */
+ font-size: 1.2em;
+}
+
+/* 
+ * This styles the links in page-content section.
+ * No text decoration is applied to the links.
  */
 
 #page-content a:link {
+    
+ /* Removes any text decoration on link text. */
  text-decoration: none;
+ 
+ /* Bolds the link. */
  font-weight: 600;
 }
 
@@ -384,12 +432,20 @@ ul li {
  */
 
 #page-content a:hover {
+    
+ /* Changes font color when cursor hovers over link. */
  color: #595959;
+ 
+ /* Links are underline when cursor hovers over it. */
  text-decoration: underline;
 }
 
 #page-content #contacts-list li {
+    
+ /* Makes the listed items align on same line. */
  display: inline-block;
+ 
+ /* Makes width of listed elements 30% of container's width. */
  width: 30%;
 }
 
@@ -408,23 +464,8 @@ ul li {
 .sm-icon {
     
  /* Defining size of the small-sized image. */
- height: 45px;
- width: 45px;
-}
-
-/*
- * This class changes the image size to be 65x65. Images made to this
- * size are considered medium-sized icons.
- */
-
-.md-icon {
-    
- /* Defining the size of the medium-sized icon. */
- height: 65px;
- width: 65px;
- 
- /* Removes some space underneath. */
- margin-bottom: -10px;
+ height: 40px;
+ width: 40px;
 }
 
 /*
@@ -542,14 +583,22 @@ ul li {
 }
 
 /*
- * This inserts styles the faculty's name, position in project, and education.
+ * This styles the faculty's name, position in project, and education.
  */
 
 #faculty-bio .profname {
+    
+ /* Makes the text not span entire width of container. */
  display: inline-block;
+ 
+ /* Aligns text to the left. */
  text-align: left;
+ 
+ /* Makes font size smaller than default. */
  font-size: 0.8em;
- margin-top: -13px;
+ 
+ /* Removes some spacing above the name. */
+ margin-top: -3px;
 }
 
 /*
@@ -558,8 +607,18 @@ ul li {
  */
 
 #faculty-bio .profbio {
- margin-top: -13px;
- font-size: 0.71em;
+    
+ /* 
+  * Removes some spacing abovece the bio paragraph. 
+  * This is mostly to make the top bio closer to the top content border.
+  */
+ margin-top: -10px;
+ 
+ /* Adds spacing underneath the bios. */
+ margin-bottom: 20px;
+ 
+ /* Make font size smaller so all bios can fit on page within 600px height limit. */
+ font-size: 0.75em;
 }
 
 
@@ -611,6 +670,9 @@ ul li {
  /* Define dimensions of button. */
  width: 150px;
  height: 36px;
+ 
+ margin-right: 50px;
+ margin-left: 50px;
  
  /* Gives button rounded corners. */
  border-radius: 23px;
