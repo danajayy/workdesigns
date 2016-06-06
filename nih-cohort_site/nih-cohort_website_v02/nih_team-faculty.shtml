@@ -149,14 +149,14 @@
 	<!-- First column -->
 	<!--				-->
 	<div class="subpage-btn">
-	 <a href="nih_team-students.shtml"><h2 class="title">Students</h2></a>
+	 <a href="nih_team-students.shtml"><p class="title">Students</p></a>
 	</div>
 	 
 	<!-- UT Dallas Students -->
 	<!-- second column -->
 	<!--				-->
 	<div class="subpage-btn">
-	 <a href="nih_team.shtml"><h2 class="title">Back</h2></a>
+	 <a href="nih_team.shtml"><p class="title">Back</p></a>
 	</div>
 	  
    <!-- end of subpages section -->

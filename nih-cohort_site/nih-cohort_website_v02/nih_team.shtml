@@ -116,14 +116,14 @@
 	<!-- first column -->
 	<!--				-->
 	<div class="subpage-btn">  
-	 <a href="nih_team-faculty.shtml"><h2 class="title">Faculty</h2></a>
+	 <a href="nih_team-faculty.shtml"><p class="title">Faculty</p></a>
 	</div>
 	  
 	<!-- Students -->
 	<!-- second column -->
 	<!--				-->
 	<div class="subpage-btn">
-	 <a href="nih_team-students.shtml"><h2 class="title">Students</h2></a>
+	 <a href="nih_team-students.shtml"><p class="title">Students</p></a>
 	</div>
 	  
    <!-- end of subpages section -->

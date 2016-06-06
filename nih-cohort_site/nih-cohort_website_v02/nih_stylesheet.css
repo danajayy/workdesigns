@@ -577,22 +577,29 @@ ul li {
 * the navigation bar.
 ******************************************************************************/
  
-/* 
- * This removes the whitespace between the subpage buttons by
- * converting the elements to flex boxes. Some spacing added at
- * the top and bottom of the subpages section.
+/*
+ * This id declares the section where the subpage buttons will be.
+ * The entire section centers the text since the buttons will be links styled
+ * to look like buttons.
+ * This class ensures that this section goes below all the other previous
+ * sections of the page. Some space is added around the subpages for aesthetics.
  */
  
 #subpages {
+    
+ /* Makes section go underneath the previous sections. */
+ clear: both;
+ 
+ /* Adds spacing above and below section. */
  margin-top: 10px;
  margin-bottom: 10px;
- display: flex;
+ 
+ /* Makes links centered in container. */
+ text-align: center;
 }
 
 /*
- * This makes the buttons line next to each other on the same line.
- * Defines the width of button, centers text, button color,
- * and some spacing adjustments to center the button text.
+ * This class styles the subpage links to look like buttons.
  */
  
 #subpages .subpage-btn {
@@ -603,43 +610,19 @@ ul li {
  /* 
   * Makes the button only take as much space they need,
   * but still maintain block properties. No longer span entire
-  * width of the page.
+  * width of the page. This also makes the buttons go on the same line.
   */
  display: inline-block;
  
- margin: auto;
- 
- /* Sets width of button */
+ /* Define dimensions of button. */
  width: 150px;
+ height: 36px;
  
- /* Add space above button title for aesthetics */
- padding-top: 8px;
- 
- /* Centers text inside button */
- text-align: center;
- 
- /* Gives button rounded corners */
+ /* Gives button rounded corners. */
  border-radius: 23px;
-}
-
-/*
- * This makes the subpage headings have 0 margin and padding to save space. Changes
- * the size of the text slightly smaller than h2 (but bigger than h3) since h2 is 1.5em
- */
-
-#subpages h2 {
- display: inline-block;
- font-size: 1.2em;
-}
-
-/*
- * This makes the text of the subpage description slightly smaller than normal
- * to save space.
- */
  
-#subpages p {
- margin-top: -15px;
- font-size: 0.7em;
+ /* Defines font-size of button text. */
+ font-size: 1.2em;
 }
 
 /*
