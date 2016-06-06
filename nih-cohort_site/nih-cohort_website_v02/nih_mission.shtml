@@ -102,11 +102,16 @@
    <!-- 				-->
    <div id="page-content">
     
+    <!-- start of page-size div -->
+    <!--                -->
     <div class="page-size">
     
      <img style="height: 95px; display: block; margin: auto;" src="img/project_flow-diagram.png" />
    
-	 <p>The mission of The National Institute of Health Cohort (NIH Cohort) project is to develop an automatic, detailed and organized EEG data retrieval system that is easily accessible to the public.</p>
+	 <p>The National Institute of Health Cohort (NIH Cohort) project is to develop an automatic, detailed and organized EEG data retrieval system that is easily accessible to the public.</p>
+     
+    <!-- end of page-size div -->
+    <!--                -->
     </div>
 	  
    <!-- end of page-content section -->
@@ -126,7 +131,7 @@
 	<div class="col-block-2">
      <img class="sm-icon" src="img/brain-wave.png" />
 	 <h4 class="title">Recognize EEG events</h4>
-	 <p>Develop automatic techniques to identify and time-align EEG events that contribute to diagnosis.</p>
+	 <p style="margin-bottom: -5px;">Develop automatic techniques to identify and time-align EEG events that contribute to diagnosis.</p>
 	</div>
 	 
 	<!-- Goal 2 block -->
@@ -135,7 +140,7 @@
 	<div class="col-block-2">
      <img class="sm-icon" src="img/light-bulb.png" />
 	 <h4 class="title">Identify critical concepts in EEGs</h4>
-	 <p>Automatically recognize EEG clinical events, activity, pattern, polarity, and modality.</p>
+	 <p style="margin-bottom: -5px;">Automatically recognize EEG clinical events, activity, pattern, polarity, and modality.</p>
 	</div>
    
    <!-- end of column-section first row -->

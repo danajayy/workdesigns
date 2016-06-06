@@ -183,11 +183,8 @@ ul li {
 
 #header {
  
- /* This resets the top, bottom, and left padding, while adding a little space on the right. */
- padding: 0px 10px 0px 0px;
- 
  /* Adds space between the elements above and below the header section of page. */
- margin-top: 35px;
+ margin-top: 30px;
  margin-bottom: 30px;
  
  /* Centers all text in header section. */
@@ -464,8 +461,8 @@ ul li {
 .sm-icon {
     
  /* Defining size of the small-sized image. */
- height: 40px;
- width: 40px;
+ height: 35px;
+ width: 35px;
 }
 
 /*
@@ -908,6 +905,7 @@ ul li {
  
  /* Makes footer text align to right. */
  text-align: right;
+ 
 }
  
 /*
