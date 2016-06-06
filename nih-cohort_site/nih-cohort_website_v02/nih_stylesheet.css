@@ -4,7 +4,7 @@
  * This file provides the fonts and overall layout and design
  * of the NIH COHORT website.
  *
- * Contents: Section 01: Reset margins, padding, import fonts, and define size of webpage
+ * Contents: Section 01: Reset margins, padding, and define size of webpage
  *			 Section 02: Define default fonts for page	
  *			 Section 03: Header section styling
  *			 Section 04: Navigation bar section styling
@@ -17,16 +17,10 @@
  */
  
 /******************************************************************************
- * Section 01: Reset margins, padding, import fonts, and define size of webpages
+ * Section 01: Reset margins, padding, and define size of webpages
  *
- * This section resets all the margins and padding, imports fonts, and defines the webpage size.
- *****************************************************************************/
- 
-/*
- * This imports the Jura and Open Sans font for the website from Google fonts
- */
- 
-@import url(https://fonts.googleapis.com/css?family=Jura|Open+Sans:400,600); 
+ * This section resets all the margins and padding, and defines the webpage size.
+ *****************************************************************************/ 
  
 /* 
  * This section resets the margins for the entire html document so elements
@@ -134,17 +128,17 @@ ul li {
 ******************************************************************************/
 
 /* 
- * This makes all p tags with 'Open Sans' font by default.
- * If not available, the back-up fonts are first Helvetica then Verdana.
+ * This makes default font Helvetica for all text.
+ * If not available, the back-up fonts are first Verdana then Arial.
  * If neither of the back-ups are available, then use the machine's default
  * sans-serif font.
- * Makes all p tags font color black.
+ * Makes all default font color black.
  */
  
 * {
  
  /* Declares the default font of the entire website to be Open Sans */
- font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
+ font-family: Helvetica, Verdana, sans-serif;
  
  /* Declares the default font color to be black. */
  color: black;
@@ -152,18 +146,18 @@ ul li {
  
  
 /* 
- * This class makes all "title" classes with the default font 'Jura'.
+ * This class makes all "title" classes with the default font Garamond.
  * All header tags are classed in "title" since each header tag
  * in each of the sections have their own styling.
  * If the font is not available, then the page will use the 
- * machine's default sans-serif font.
+ * machine's default serif font.
  * Makes all title classes font color black.
  */
  
 .title {
     
- /* Makes all .title classes with font Jura. */
- font-family: 'Jura', sans-serif;
+ /* Makes all .title classes with font Garamond. */
+ font-family: Garamond, serif;
  
  /* Makes all .title classes with font color black. */
  color: black;
@@ -396,7 +390,7 @@ ul li {
 
 #page-content #contacts-list li {
  display: inline-block;
- width: 33%;
+ width: 30%;
 }
 
 /******************************************************************************
