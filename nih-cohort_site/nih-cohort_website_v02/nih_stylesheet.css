@@ -182,23 +182,37 @@ ul li {
  */
 
 #header {
- 
- /* Adds space between the elements above and below the header section of page. */
+ /* Spacing above and below header section. */
  margin-top: 30px;
  margin-bottom: 30px;
- 
+
  /* Centers all text in header section. */
  text-align: center;
 }
  
-/*
- * This changes the font size of the h4 tag.
- * Also moves it to the right a little bit for aesthetics.
- */
+#header-index {
+    
+  /* Defining dimensions of header */
+ height: 150px;
+ width: 100%;
  
-#header h4 {
- font-size: 1.4em;
-}
+ /* Defines background image for index banner. */
+ background-image: url('./img/nih-banner.png');
+ 
+ /* Makes sure the image does not repeat in container. */
+ background-repeat: no-repeat;
+ 
+ /* Defines dimensions of background image. */
+ background-size: 95% 200px;
+ 
+ background-position: center;
+ 
+ /* Move title to lower part of header section */
+ padding-top: 30px;
+ 
+ /* Centers text */
+ text-align: center;
+} 
  
 /******************************************************************************
 * Section 04: Navigation bar section styling
@@ -330,15 +344,6 @@ ul li {
 * the html document. It declares the banner image used for the header, the
 * margins of the title and subtitle, and the font-size of the title and subtitle.
 ******************************************************************************/
- 
-/* 
- * Trying to figure out why need an empty CSS block for the page-content
- * section to get the CSS styling.
- */
- 
-#page-content {
-	 
-}
 
 /*
  * This class applies the styling to all the elements in the page-content section. Slight
@@ -354,6 +359,10 @@ ul li {
  padding-bottom: 10px;
  padding-left: 15px;
  padding-right: 15px;
+ 
+ 
+ /* Spacing below page-content section. */
+ margin-bottom: 5px;
  
  /* Makes the background color a very faint and transparent black. */
  background-color: rgba(0, 0, 0, 0.1);
@@ -382,30 +391,6 @@ ul li {
  
  /* Centers text of p tags. */
  text-align: center;
-}
-
-/*
- * This styles the resource list on the resource page.
- * The list is left-aligned and smaller font to save space.
- */
-
-#resource-list ul li {
-    
- /* Makes text of listed item align on the left. */
- text-align: left;
- 
- /* Makes the font size of listed items smaller. */
- font-size: 0.9em;
-}
-
-/* 
- * This makes the links on the resource page have a bigger font size. 
- */
-
-#resource-list a{
-    
- /* Increasees font size of link text on resource page. */
- font-size: 1.2em;
 }
 
 /* 
@@ -437,7 +422,37 @@ ul li {
  text-decoration: underline;
 }
 
-#page-content #contacts-list li {
+/*
+ * This styles the resource list on the resource page.
+ * The list is left-aligned and smaller font to save space.
+ */
+
+#resource-list ul li {
+    
+ /* Makes text of listed item align on the left. */
+ text-align: left;
+ 
+ /* Makes the font size of listed items smaller. */
+ font-size: 0.9em;
+}
+
+/* 
+ * This makes the links on the resource page have a bigger font size. 
+ */
+
+#resource-list a{
+    
+ /* Increasees font size of link text on resource page. */
+ font-size: 1.2em;
+}
+
+/* 
+ * This id styles the contacts to be inline-block so the contacts
+ * will be on the same line. Also makes each listed contact have 
+ * a width 30% the width of the container.
+ */
+
+#contacts-list li {
     
  /* Makes the listed items align on same line. */
  display: inline-block;
@@ -461,9 +476,9 @@ ul li {
 .sm-icon {
     
  /* Defining size of the small-sized image. */
- height: 35px;
- width: 35px;
-}
+ height: 30px;
+ width: 30px;
+} 
 
 /*
  * This class defines the size of the div that will contain the buildings images
@@ -918,6 +933,9 @@ ul li {
  
  /* Makes background color a very light and transparent black. */
  background-color: rgba(0, 0, 0, 0.1);
+ 
+ /* Spacing between text and top edge of footer. */
+ padding-top: 2px;
  
  /* Makes the font size in footer text smaller than rest of page. */
  font-size: 0.7em;

@@ -88,12 +88,14 @@
   
    <!-- start of header section -->
    <!--			-->
-   <div id="header">
+   <div id="header-index">
 	 
 	<!-- title of webpage -->
-    <!-- for index page, slogan is here instead -->
+    <h1 class="title"> National Institute of Health Cohort </h1>
+    
+    <!-- slogan for index page -->
 	<!--				-->
-	<h4 class="title">Vast collection of EEG data</br> Public for the world to see</h4>
+	<h4 style="margin-top: -10px;" class="title">Vast collection of EEG data, public for the world to see</h4>
 	 
    <!-- end of header div -->
    <!--				-->
@@ -119,7 +121,7 @@
 	 
    <!-- start of column-section -->
    <!--				-->
-   <div class="column-section no-gap page-size">
+   <div class="column-section page-size">
 	
 	<!-- 2 columns in column-section -->
 	<!--				-->

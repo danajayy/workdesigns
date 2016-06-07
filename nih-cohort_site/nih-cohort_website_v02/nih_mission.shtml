@@ -92,7 +92,7 @@
 	 
 	<!-- title of webpage -->
 	<!--				-->
-	<h4 class="title">Mission</h4>
+	<h2 class="title">Mission</h2>
 	 
    <!-- end of header div -->
    <!--				-->
@@ -129,7 +129,7 @@
 	<!-- first row -->
 	<!--				-->
 	<div class="col-block-2">
-     <img class="sm-icon" src="img/brain-wave.png" />
+     <img class="sm-icon" src="img/brain-wave.png"/>
 	 <h4 class="title">Recognize EEG events</h4>
 	 <p style="margin-bottom: -5px;">Develop automatic techniques to identify and time-align EEG events that contribute to diagnosis.</p>
 	</div>
