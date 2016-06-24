@@ -1,4 +1,4 @@
-/*Files: nih_index.html, nih_mission.html, nih_team.html, nih_team-faculty.html,
+/*Files: nih_index.html, nih_overview.html, nih_team.html, nih_team-faculty.html,
  *		nih_team-students.html, nih_resources.html, nih_publications.html, nih_contact.html
  * 
  * This file provides the fonts and overall layout and design
@@ -10,10 +10,11 @@
  *			 Section 04: Navigation bar section styling
  *			 Section 05: Page content section styling
  *           Section 06: Graphics styling
- *			 Section 07: Faculty Profile styling
- *			 Section 08: Subpages section styling
- *			 Section 09: Column-section section styling
- *			 Section 10: Footer section styling
+ *           Section 07: Team page pictures styling
+ *			 Section 08: Faculty Profile styling
+ *			 Section 09: Subpages section styling
+ *			 Section 10: Column-section section styling
+ *			 Section 11: Footer section styling
  */
  
 /******************************************************************************
@@ -72,13 +73,13 @@ body {
 /* 
  * This class declares the required width of 800px for the entire webpage
  * where all the contents and graphics must be contained in.
- * Made the max width 750px to be safe everything is contained within the max.
+ * Made the max width 780px to be safe everything is contained within the max.
  */
 
 .page-size {
     
  /* Defines max width of page contents */
- width: 750px; 
+ width: 780px; 
  
  /* 
   * This makes the contents centered. Need to reset left and right
@@ -104,22 +105,16 @@ ul {
  
  /* Makes the font-size of unordered list smaller than default size. */
  font-size: 0.9em;
- 
- /* Centers text */
- text-align: center;
- 
- /* Moves listed elements to left to compensate the space left for the bullets. */
- margin-left: -50px;
 }
 
-/*
- * This selector puts a little bit of space between each bullet element of an unordered list.
- */
 
+/* 
+ * This selector adds padding at the bottom of a listed element. 
+ */
 ul li {
     
- /* A little spacing underneath each listed element. */
- padding-bottom: 6px;
+ /* Adds space at the bottom. */
+ padding-bottom: 3px;
 }
  
 /******************************************************************************
@@ -148,6 +143,7 @@ ul li {
  
  /* Declares the default font color to be black. */
  color: black;
+ 
 }
  
  
@@ -355,8 +351,8 @@ ul li {
  
  /* Adds spacing around the text in page-content so text will not go all the way
   * to edge of container. This makes the text look more centered. */
- padding-top: 10px;
- padding-bottom: 10px;
+ padding-top: 5px;
+ padding-bottom: 5px;
  padding-left: 15px;
  padding-right: 15px;
  
@@ -387,7 +383,7 @@ ul li {
 #page-content p {
     
  /* Makes text in p tags smaller. */
- font-size: 0.9em;
+ font-size: 0.85em;
  
  /* Centers text of p tags. */
  text-align: center;
@@ -420,6 +416,49 @@ ul li {
  
  /* Links are underline when cursor hovers over it. */
  text-decoration: underline;
+}
+
+#overview-content {
+ height: 200px;
+ width: 100%;
+ padding-bottom: 40px;
+ overflow: hidden;
+}
+
+/*controls where page jump content will land on webpage*/
+.anchor {
+ height: 30px;
+ margin-top: -35px;
+ display: block;
+ visibility: hidden;
+}
+
+#overview-content ol li{
+ margin-left: 50px;
+}
+
+.overview-spacing {
+ margin-bottom: 50px;
+}
+
+.overview-content-aims {
+ position: relative;
+ height: 90%;
+}
+
+.overview-content-aims ul {
+ font-size: 0.8em;
+}
+
+.aim-nav {
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ font-size: 0.7em;
+}
+
+.aim-nav a:hover{
+ text-decoration: none;
 }
 
 /*
@@ -461,6 +500,22 @@ ul li {
  width: 30%;
 }
 
+/*
+ * This id styles the journal list to have a smaller font and left indentation.
+ */
+
+#journal-list {
+    
+ /* Makes the font size smaller. */
+ font-size: 0.7em;
+ 
+ /* 
+  * Left indents the listed journals. Has to be -30px because
+  * at 0 px, that is where the text is originally if there were bullet points.
+  */
+ margin-left: -30px;
+}
+
 /******************************************************************************
 * Section 06: Graphics styling
 *
@@ -479,6 +534,18 @@ ul li {
  height: 30px;
  width: 30px;
 } 
+
+/*
+ * This class changes the image size to be 50x50. Images made to this
+ * size are considered medium-sized icons.
+ */
+ 
+.md-icon {
+    
+ /* Defining size of the med-sized images. */
+ height: 50px;
+ width: 50px;
+}
 
 /*
  * This class defines the size of the div that will contain the buildings images
@@ -533,7 +600,66 @@ ul li {
 }
 
 /******************************************************************************
-* Section 07: Faculty profile styling
+* Section 07: Team page pictures styling
+*
+* This section contains the styling for the crossfading picture
+* slideshow on the nih-team.shtml page.
+******************************************************************************/
+
+.cf {
+ height: 160px;
+ width: 225px;
+ display: inline-block;
+ margin-right: -5px;
+}
+
+.cf ul {
+ list-style: none; 
+ margin: 0;
+ padding: 0;
+ position: relative;
+}
+
+.cf li {
+ position: absolute;
+ left: 20%;
+}
+
+.cf img{
+ height: 150px;
+ width: 225px;
+}
+
+.cf li:nth-child(4) {
+ animation: xfade 16s 0s infinite;
+}
+
+.cf li:nth-child(3) {
+ animation: xfade 16s 4s infinite;
+}
+
+.cf li:nth-child(2) {
+ animation: xfade 16s 8s infinite;
+}
+
+.cf li:nth-child(1) {
+ animation: xfade 16s 12s infinite;
+}
+
+@keyframes xfade{
+ 17% {
+  opacity:1;
+ }
+ 25% {
+  opacity:0;
+ }
+ 92% {
+  opacity:0;
+ }
+}
+
+/******************************************************************************
+* Section 08: Faculty profile styling
 *
 * This section contains all the styling for the faculty profile pictures for their bios
 * on the nih_team-faculty.html page.
@@ -641,7 +767,7 @@ ul li {
 
 
 /******************************************************************************
-* Section 08: Subpages section styling
+* Section 09: Subpages section styling
 *
 * This section styles the buttons for the subpages about this project. 
 * These buttons are here if needed if they are different from the ones on
@@ -689,8 +815,8 @@ ul li {
  width: 150px;
  height: 36px;
  
- margin-right: 50px;
- margin-left: 50px;
+ margin-right: 15px;
+ margin-left: 15px;
  
  /* Gives button rounded corners. */
  border-radius: 23px;
@@ -749,7 +875,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 09: Column-section section styling
+* Section 10: Column-section section styling
 *
 * This section contains the styling for the column-section section of the webpage.
 * The font-styling, background color, height of section, and some margin adjustments are done.
@@ -764,7 +890,6 @@ ul li {
 .column-section {
  background-color: transparent;
  text-align: center;
- margin-top: -10px;
 }
  
 /*
@@ -780,10 +905,10 @@ ul li {
  margin: auto;
  
  /* Make width of columns 21% of width of container. */
- width: 21%;
+ width: 22%;
  
  /* Add space to left and top of column. */
- padding-top: 15px;
+ padding-top: 10px;
  padding-left: 22px;
 }
 
@@ -812,7 +937,7 @@ ul li {
  width: 45%;
  
  /* Spacing on top to add space between the contents above. */
- padding-top: 15px;
+ padding-top: 5px;
  
  /* Spacing on left to add space between the 2 columns. */
  padding-left: 3%;
@@ -835,9 +960,6 @@ ul li {
  */
  
 .col-block-2 ul {
-    
- /* Removes the bullet points from unordered list. */
- list-style: none;
  
  /* Makes font size of unordered list smaller. */
  font-size: 0.7em;
@@ -847,6 +969,8 @@ ul li {
  
  /* Adds space to right of unordered list. */
  padding-right: 10px;
+ 
+ margin-left: -50px;
 }
 
 /* 
@@ -855,19 +979,16 @@ ul li {
  * to position the text in the center and the font-size is smaller.
  */
  
-.col-block-4 ul {
-    
- /* Adds space to left of unordered list. */
- padding-left: 55px;
- 
- /* Removes the bullet points from unordered list. */
- list-style: none;
+.col-block-4 ul li {
  
  /* Centers text. */
  text-align: center;
  
  /* Makes font size of unordered list smaller. */
- font-size: 0.7em;
+ font-size: 0.8em;
+ 
+ /* Add some spacing around the listed items. */
+ padding-left: 8px;
 }
 
 /* 
@@ -878,7 +999,7 @@ ul li {
 .col-block-2 a:link {
     
  /* Removes any text decoration to links. */
- text-decoration: none;
+ text-decoration: underline;
 }
 
 /*
@@ -916,7 +1037,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 10: Footer section styling
+* Section 11: Footer section styling
 *
 * This section styles the footer of the page. The footer contains any copyright
 * information, credits, and acknowledgements that need to be displayed.

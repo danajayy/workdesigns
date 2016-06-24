@@ -67,7 +67,7 @@
 	 <!-- second column -->
 	 <!--				-->
 	 <div class="nav-btn">
-	  <a href="nih_mission.shtml"><p>Mission</p></a>
+	  <a href="nih_overview.shtml"><p>Overview</p></a>
 	 </div>
 	   
 	 <!-- Home link -->
@@ -110,7 +110,7 @@
 	 
 	 <!-- listing PIs using unordered list -->
 	 <!--				-->
-	 <ul id="contacts-list">
+	 <ul style="text-align: center;" id="contacts-list">
 	  <li>Dr. Iyad Obeid</br>iobeid@temple.edu</li>
 	  <li>Dr. Joseph Picone</br>joseph.picone@gmail.com</li>
 	  <li>Professor Sanda Harabagiu</br>sanda@hlt.utdallas.edu</li>

@@ -68,7 +68,7 @@
 	 <!-- second column -->
 	 <!--				-->
 	 <div class="nav-btn">
-	  <a href="nih_mission.shtml"><p>Mission</p></a>
+	  <a href="nih_overview.shtml"><p>Overview</p></a>
 	 </div>
 	   
 	 <!-- Home link -->
@@ -101,8 +101,59 @@
    <!-- start page-content section -->
    <!-- 				-->
    <div id="page-content">
+    
+    <div class="page-size">
 	 
-	<p class="page-size">Launched in October 2015 by Sanda Harabagiu, Joseph Picone and Iyad Obeid, a project collaboration between Temple University and University of Texas at Dallas. The University of Texas at Dallas team are in charge of automating recognition of critical concepts of EEG reports and the patient cohort retrieval system. The Temple University team are responsible for automatically recognizing and time-aligning the EEG reports and evaluating and optimizing the retrieval system.</p>
+	 <p>Launched in October 2015 by Sanda Harabagiu, Joseph Picone and Iyad Obeid, a project collaboration between Temple University and University of Texas at Dallas. The University of Texas at Dallas team are in charge of automating recognition of critical concepts of EEG reports and the patient cohort retrieval system. The Temple University team are responsible for automatically recognizing and time-aligning the EEG reports and evaluating and optimizing the retrieval system.</p>
+     
+     <!-- Picture slideshow left -->
+     <!--               -->
+     <div class="cf">
+     
+      <ul>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20150724_summer_of_code/img_0003.jpg" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20151112_nihbd2k/img_0007.jpg" /></li>
+       <li><img width="495" height="370" title="" alt="" src="https://www.isip.piconepress.com/images/memorabilia/temple/20141231_lunch/100_6743.JPG" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20150130_autoeeg/20150130_EEG_003.JPG" /></li>
+      </ul>
+      
+     <!-- end of picture slideshow left -->
+     <!--               -->
+     </div>
+     
+     <!-- Picture slideshow middle -->
+     <!--               -->
+     <div class="cf">
+     
+      <ul>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20151112_nihbd2k/img_0008.jpg" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20160324_yang/DSCN0073.JPG" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20160428_going_away/IMG_3122.JPG" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20150810_icorps/IMAG1393.jpg" /></li>
+      </ul>
+      
+     <!-- end of picture slideshow middle -->
+     <!--               -->
+     </div>
+     
+     <!-- Picture slideshow right -->
+     <!--               -->
+     <div class="cf">
+     
+      <ul>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20150724_summer_of_code/img_0012.jpg" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20160614_computers/img_000.jpg" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20160428_going_away/DSCN0197.JPG" /></li>
+       <li><img src="https://www.isip.piconepress.com/images/memorabilia/temple/20150729_summer_of_code/DSCN1860.JPG" /></li>
+      </ul>
+      
+     <!-- end of picture slideshow right -->
+     <!--               -->
+     </div>
+      
+    <!-- end of page-size div -->
+    <!--                -->
+    </div>
 	  
    <!-- end of proj-goal section -->
    <!--				-->

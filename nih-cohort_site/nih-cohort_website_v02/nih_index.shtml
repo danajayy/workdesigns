@@ -68,7 +68,7 @@
 	 <!-- second column -->
 	 <!--				-->
 	 <div class="nav-btn">
-	  <a href="nih_mission.shtml"><p>Mission</p></a>
+	  <a href="nih_overview.shtml"><p>Overview</p></a>
 	 </div>
 	   
 	 <!-- Home link -->
@@ -91,11 +91,13 @@
    <div id="header-index">
 	 
 	<!-- title of webpage -->
-    <h1 class="title"> National Institute of Health Cohort </h1>
+    <h1 class="title"> Automatic Discovery of EEG Cohorts From Clinical Records </h1>
     
     <!-- slogan for index page -->
 	<!--				-->
-	<h4 style="margin-top: -10px;" class="title">Vast collection of EEG data, public for the world to see</h4>
+	<h4 style="margin-top: -10px;" class="title"> Enabling comparative research by automatically uncovering
+ clinical knowledge from a vast BigData archive of clinical
+ EEG signals and EEG reports</h4>
 	 
    <!-- end of header div -->
    <!--				-->
@@ -109,7 +111,7 @@
     <!--                -->
 	<div class="page-size">
 
-	 <p style="font-weight: 600;">With our expert knowledge in machine learning, EEGs, big data analytics, and software, we strive to bring a huge collection of EEG data public for the world to use to advance their research and provide more confident and better patient diagnoses.</p>
+	 <p style="font-weight: 600;">With our expert knowledge in signal processing, machine learning, EEGs, BigData analytics, and software, we strive to bring a huge collection of EEG data public for the world to use to advance their research and provide more confident and better patient diagnoses.</p>
      
     <!-- end of page-size div -->
     <!--                -->
@@ -123,7 +125,7 @@
    <!--				-->
    <div class="column-section page-size">
 	
-	<!-- 2 columns in column-section -->
+	<!-- 4 columns in column-section -->
 	<!--				-->
 	 
 	<!-- Fast Column -->

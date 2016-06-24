@@ -1,0 +1,350 @@
+ <!DOCTYPE html>
+ <html>
+ 
+  <!-- start of head element section -->
+  <!--				-->
+  <head>
+  
+   <title>NIH Cohort Overview</title>
+  
+   <!-- linking CSS file nih_stylesheet.css -->
+   <!--				-->
+   <link type="text/css" rel="stylesheet" href="nih_stylesheet.css"/>
+  
+  <!-- end of head element section -->
+  <!--				-->
+  </head>
+ 
+  <!-- start of body element section -->
+  <!--				-->
+  <body>
+  
+   <!-- navigation bar -->
+   <!--				-->
+   <div id="nav">
+	 
+	<!-- 6 buttons in nav section -->
+	<!-- 				-->
+	  
+	<!-- start of page-size div -->
+	<!-- need this to contain content within 800px -->
+	<!--				-->
+	<div class="page-size">
+	  
+	 <!-- Project Title -->
+	 <!-- placeholder for now, this is where the logo will go -->
+	 <!--				-->
+	 <p class="title" id="logo">NIH Cohort</p>
+	   
+     <!-- Contact Link -->
+	 <!-- sixth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_contact.shtml"><p>Contact</p></a>
+	 </div>
+	   
+	 <!-- Resources link -->
+	 <!-- fifth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_resources.shtml"><p>Resources</p></a>
+	 </div>
+	   
+	 <!-- Publications link -->
+	 <!-- fourth column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_publications.shtml"><p>Publications</p></a>
+	 </div>
+	   
+	 <!-- Team link -->
+	 <!-- third column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_team.shtml"><p>Team</p></a>
+	 </div>
+	   
+	 <!-- Mission link -->
+	 <!-- second column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_overview.shtml"><p>Overview</p></a>
+	 </div>
+	   
+	 <!-- Home link -->
+	 <!-- first column -->
+	 <!--				-->
+	 <div class="nav-btn">
+	  <a href="nih_index.shtml"><p>Home</p></a>
+	 </div>
+	   
+	<!-- end of page-size div -->
+	<!--				-->
+	</div>
+	  
+   <!-- end of nav section -->
+   <!--				-->
+   </div>
+  
+   <!-- start of header section -->
+   <!--			-->
+   <div id="header">
+	 
+	<!-- title of webpage -->
+	<!--				-->
+	<h2 class="title">Mission</h2>
+	 
+   <!-- end of header div -->
+   <!--				-->
+   </div>
+	
+   <!-- page-content section -->
+   <!-- 				-->
+   <div id="page-content">
+    
+    <!-- start of page-size div -->
+    <!--                -->
+    <div class="page-size">
+    
+    
+     <!-- start of overview-content section -->
+     <!--               -->
+     <div id="overview-content">
+      
+      <span id="default" class="anchor"></span>
+      <p style="margin: 50px 0px 150px 0px;">Electroencephalography (EEG) records and measures the electrical activity of the brain and the collected information are used to diagnose brain disorders and diseases, such as epilepsy and Alzheimer's disease. They are also used in research fields such as neuroscience, medicine, and bioengineering. However, EEG signals are complex signals and their interpretations vary by their observer which can lead to inconsistent diagnoses and slow down research progression.</p>
+     
+      <span id="solution" class="anchor"></span>
+      <img style="display: block; margin: auto; height: 100px;" src="img/project_flow-diagram.png" />
+      <p class="overview-spacing">Our proposed solution is <strong>automating the extraction of clinical information from a large database of EEG signals and EEG reports through a patient cohort retrieval system.</strong> This resource will allow users to search the large EEG archive and list patient records of EEGs relevant for interpretation of specific cases. It will help with diagnosing brain illnesses, conducting clinical research, and training young neurophysiologists. For proof-of-concept, this project uses the Temple University Hospital (TUH) EEG corpus which contains 25,000 sessions and 15,000 patients that have been collected over the span of 12 years, to create the patient cohort retrieval system.</p>
+     
+      <span id="challenges" class="anchor"></span>
+      <p>The apparent challenges in this project are</p>
+      <ol class="overview-spacing">
+       <li> The EEG report formats from the the TUH EEG corpus vary between physicians.</li>
+       <li>The interpretations and findings between physicians are inconsistent.</li>
+       <li>Automatically processing EEG signals and reports.</li>
+       <li>Searching patients based on their EEG reports and signals.</li>
+      </ol>
+     
+      </br></br></br>
+     
+      <span id="aims" class="anchor"></span>
+      <!-- start of column-section -->
+      <!--				-->
+      <div style="height: 100px;" class="column-section">
+	
+	   <!-- 4 columns in column-section -->
+	   <!--				-->
+	 
+	   <!-- Aim 1 Column -->
+	   <!-- first column -->
+	   <!--				-->
+	   <div class="col-block-4">
+        <a href="#aim1"><img class="md-icon" src="img/brain-wave.png" /></a>
+	    <h4 class="title">Aim 1</h4>
+	    <p>Automatically Recognize and Time-Align Events in EEG Signals</p>
+	   </div>
+	 
+	   <!-- Aim 2 Column -->
+	   <!-- second column -->
+	   <!--				-->
+	   <div class="col-block-4">
+        <a href="#aim2"><img class="md-icon" src="img/light-bulb.png" /></a>
+        <h4 class="title">Aim 2</h4>
+        <p>Automatically Recognize Critical Clinical Concepts in the EEG Reports</p>
+       </div>
+	 
+       <!-- Aim 3 Column -->
+       <!-- third column -->
+       <!--				-->
+       <div class="col-block-4">
+        <a href="#aim3"><img class="md-icon" src="img/software.png" /></a>
+        <h4 class="title">Aim 3</h4>
+        <p>Automatic Patient Cohort Retrieval</p>
+       </div>
+	 
+       <!-- Organized Column -->
+       <!-- fourth column -->
+       <!--				-->
+       <div class="col-block-4">
+        <a href="#aim4"><img class="md-icon" src="img/checklist.png" /></a>
+        <h4 class="title">Aim 4</h4>
+        <p>Evaluation and Analysis of the Results of the Patient Retrieval</p>
+       </div>
+      
+      <!-- end of column section -->
+      <!--              -->
+      </div>
+      
+      
+      <div style="height: 100px;" class="overview-spacing"></div>
+      
+      <!-- Aim 1 Further Info -->
+      <!--              -->
+      <span id="aim1" class="anchor"></span>
+      
+      <!-- need this div to keep aims nav bar at same place -->
+      <!--              -->
+      <div class="overview-content-aims">
+      
+       <h3 class="title">Aim 1: Automatically Recognize and Time-Align Events in EEG Signals</h3>
+       <p>The EEG signal data will be automatically labeled based on 5 different events:</p>
+       <ul>
+        <li>Spike and Sharp wave (SPK)</li>
+        <li>Generalized periodic epileptic discharges (GPED) and triaphasic</li>
+        <li>Periodic lateralized epileptiform discharges (PLED)</li>
+        <li>Eye blink (EBLY)</li>
+        <li>Artifact (ARTF)</li>
+       </ul>
+      
+       <div class="aim-nav">
+        <a href="#aims"><< Back</a> || <a href="#aim2">Next: Aim 2 >></a>
+       </div>
+       
+      <!-- end of overview-content-aims -->
+      <!--              -->
+      </div>
+      
+      <div style="height: 100px;" class="overview-spacing"></div>
+      
+      <!-- Aim 2 Further Info -->
+      <!--              -->
+      <span id="aim2" class="anchor"></span>
+      
+      <!-- need this div to keep aims nav bar at same place -->
+      <!--              -->
+      <div class="overview-content-aims">
+      
+       <h3 class="title">Aim 2: Automatically Recognize Critical Clinical Concepts in the EEG Reports</h3>
+       <p>We will automatically identify:</p>
+       <ul>
+        <li>The patient's clinical history, conditions, and medication</li>
+        <li>The technique used to collect the EEG</li>
+        <li>Objective descriptions of the observeed activity, patterns, and events in the EEG</li>
+       </ul>
+      
+       <div class="aim-nav">
+        <a href="#aim1"><< Back</a> || <a href="#aim3">Next: Aim 3 >></a>
+       </div>
+       
+      <!-- end of overview-content-aims -->
+      <!--              -->
+      </div>
+      
+      <div style="height: 100px;" class="overview-spacing"></div>
+      
+      <!-- Aim 3 Further Info -->
+      <!--              -->
+      <span id="aim3" class="anchor"></span>
+      
+      <!-- need this div to keep aims nav bar at same place -->
+      <!--              -->
+      <div class="overview-content-aims">
+      
+       <h3 class="title">Aim 3: Automatic Patient Cohort Retrieval</h3>
+       <p>Create a system that can accurately identify a desired patient population that will provide:</p>
+       <ul>
+        <li>Annotated EEG reports and EEG signals with processed semantic information</li>
+        <li>The delivered EEG reports and signals search results will be ranked and listed in decreased order of relevance</li>
+        <li>Identification needed to specify patient cohorts when asked for a list of EEG reports</li>
+        <li>Organize EEG signal and report analysis using the qualified medical knowledge graph (QMKG) which will be used to increase the system's accuracy</li>
+       </ul>
+      
+       <div class="aim-nav">
+        <a href="#aim2"><< Back</a> || <a href="#aim4">Next: Aim 4 >></a>
+       </div>
+      
+      <!-- end of overview-content-aims -->
+      <!--              -->
+      </div>
+      
+      <div style="height: 100px;" class="overview-spacing"></div>
+      
+      <!-- Aim 4 Further Info -->
+      <!--              -->
+      <span id="aim4" class="anchor"></span>
+      
+      <!-- need this div to keep aims nav bar at same place -->
+      <!--              -->
+       <div class="overview-content-aims">
+       <h3 class="title">Aim 4: Evaluation and Analysis of the Results of the Patient Cohort Retrieval</h3>
+       <ul>
+        <li>Analyze the retrieved non-relevant EEG reports from a search request</li>
+        <li>Analyze relevant EEG reports that were not in the listed results</li>
+        <li>Improve the search requirements for clinical studies involving EEG data (e.g. "inclusion criteria" to describe the type of patients needed for a clinical study)</li>
+       </ul> 
+      
+       <div class="aim-nav">
+        <a href="#aim3"><< Back</a> || <a href="#aim1">Back to Top >></a>
+       </div>
+       
+      <!-- end of overview-content-aims -->
+      <!--              -->
+      </div>
+      
+     <!-- end of overview-content div -->
+     <!--               -->
+     </div>
+     
+    <!-- end of page-size div -->
+    <!--                -->
+    </div>
+	  
+   <!-- end of page-content section -->
+   <!--				-->
+   </div>
+	 
+   <!-- subpages section -->
+   <!--				-->
+   <div id="subpages" class="page-size">
+	
+	<!-- Default overview -->
+	<!-- first column -->
+	<!--				-->
+	<div class="subpage-btn">  
+	 <a href="#default"><p class="title">Intro</p></a>
+	</div>
+	  
+	<!-- Solution overview -->
+	<!-- second column -->
+	<!--				-->
+	<div class="subpage-btn">
+	 <a href="#solution"><p class="title">Solution</p></a>
+	</div>
+    
+	<!-- Challenges overview -->
+	<!-- third column -->
+	<!--				-->
+	<div class="subpage-btn">
+	 <a href="#challenges"><p class="title">Challenges</p></a>
+	</div>
+    
+	<!-- Aims overview -->
+	<!-- fourth column -->
+	<!--				-->
+	<div class="subpage-btn">
+	 <a href="#aims"><p class="title">Aims</p></a>
+	</div>
+	  
+   <!-- end of subpages section -->
+   <!--				-->
+   </div> 
+	
+   <!-- start of footer div -->
+   <!--				-->
+   <div id="footer">
+	
+	<p class="page-size">Insert any copyright information here</br><span id="design">Website designed by Dana Joaquin</span></p>
+	
+   <!-- end of footer -->
+   <!--				-->
+   </div>
+ 
+  <!-- end of body element section -->
+  <!-- 					-->
+  </body>
+  
+ </html>
+ 
+ <!-- end of nih_mission.html file -->
