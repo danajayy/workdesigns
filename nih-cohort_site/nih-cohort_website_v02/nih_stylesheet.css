@@ -9,12 +9,13 @@
  *			 Section 03: Header section styling
  *			 Section 04: Navigation bar section styling
  *			 Section 05: Page content section styling
- *           Section 06: Graphics styling
- *           Section 07: Team page pictures styling
- *			 Section 08: Faculty Profile styling
- *			 Section 09: Subpages section styling
- *			 Section 10: Column-section section styling
- *			 Section 11: Footer section styling
+ *           Section 06: Overview Page styling
+ *           Section 07: Graphics styling
+ *           Section 08: Team page pictures styling
+ *			 Section 09: Faculty Profile styling
+ *			 Section 10: Subpages section styling
+ *			 Section 11: Column-section section styling
+ *			 Section 12: Footer section styling
  */
  
 /******************************************************************************
@@ -173,10 +174,6 @@ ul li {
 * margins of the title and subtitle, and the font-size of the title and subtitle.
 ******************************************************************************/
 
-/*
- * This defines the banner image for the header by making the image the background.  
- */
-
 #header {
  /* Spacing above and below header section. */
  margin-top: 30px;
@@ -185,30 +182,55 @@ ul li {
  /* Centers all text in header section. */
  text-align: center;
 }
+
+/*
+ * This defines the banner image for the header by making the image the background.  
+ */
  
 #header-index {
     
   /* Defining dimensions of header */
- height: 150px;
+ height: 400px;
  width: 100%;
  
  /* Defines background image for index banner. */
- background-image: url('./img/nih-banner.png');
+ background-image: url('./img/nih-banner2.png');
  
  /* Makes sure the image does not repeat in container. */
  background-repeat: no-repeat;
  
  /* Defines dimensions of background image. */
- background-size: 95% 200px;
+ background-size: cover;
  
  background-position: center;
  
  /* Move title to lower part of header section */
  padding-top: 30px;
  
- /* Centers text */
- text-align: center;
+ /* left-aligns text */
+ text-align: left;
 } 
+
+/*
+ * This id styles the text on the index.html page. It makes the text alignment to the right
+ * and moves the text to the right side of container. The text is moved below the title
+ * and subtext.
+ */
+
+#header-index-content {
+    
+ /* Moves text all the way to right. */
+ margin-left: auto;
+ 
+ /* Makes container 70% of max width (70% of 800px) */
+ width: 70%;
+ 
+ /* Right aligns text. */
+ text-align: right;
+ 
+ /* Moves text down below title and subtext. */
+ margin-top: 50px;
+}
  
 /******************************************************************************
 * Section 04: Navigation bar section styling
@@ -418,49 +440,6 @@ ul li {
  text-decoration: underline;
 }
 
-#overview-content {
- height: 200px;
- width: 100%;
- padding-bottom: 40px;
- overflow: hidden;
-}
-
-/*controls where page jump content will land on webpage*/
-.anchor {
- height: 30px;
- margin-top: -35px;
- display: block;
- visibility: hidden;
-}
-
-#overview-content ol li{
- margin-left: 50px;
-}
-
-.overview-spacing {
- margin-bottom: 50px;
-}
-
-.overview-content-aims {
- position: relative;
- height: 90%;
-}
-
-.overview-content-aims ul {
- font-size: 0.8em;
-}
-
-.aim-nav {
- position: absolute;
- right: 0;
- bottom: 0;
- font-size: 0.7em;
-}
-
-.aim-nav a:hover{
- text-decoration: none;
-}
-
 /*
  * This styles the resource list on the resource page.
  * The list is left-aligned and smaller font to save space.
@@ -517,7 +496,144 @@ ul li {
 }
 
 /******************************************************************************
-* Section 06: Graphics styling
+* Section 06: Overview Page styling
+*
+* This section contains all the styling information only for the Overview page
+* such as the page jumps, aims nav bar, and spacing between each section on the page.
+******************************************************************************/
+
+/*
+ * This id holds all the overview content but adds height restraint. 
+ * Scrolling is disabled. This id allows the content to be accessed by
+ * page jumping so that all necessary content will be displayed while
+ * staying within dimension requirements.
+ */
+ 
+#overview-content {
+    
+ /* Dimensions of container for contens. */
+ height: 250px;
+ width: 100%;
+ 
+ /* Spacing at bottom of container. */
+ padding-bottom: 30px;
+ 
+ /* Disables scrolling. */
+ overflow: hidden;
+}
+
+/*
+ * This class controls where the page jump will land. The page
+ * jump is designed to jump to the section with 30px spacing from
+ * the top of the container. This makes sure that the contents are centered
+ * vertically.
+ */
+ 
+.anchor {
+    
+ /* Define the height of where the page jump should land. */
+ height: 30px;
+ margin-top: -30px;
+ 
+ /* Make the span a block. */
+ display: block;
+ 
+ /* Do not show span element. */
+ visibility: hidden;
+}
+
+/*
+ * This id styles the ordered lists in the overview page.
+ */
+ 
+#overview-content ol li{
+ 
+ /* Move list to right for aesthetics. */
+ margin-left: 80px;
+ 
+ /* Make font-size smaller. */
+ font-size: 0.9em;
+ 
+ /* Add spacing between listed elements. */
+ padding-bottom: 5px;
+}
+
+/*
+ * This class adds a large amount of space between each
+ * content section in the overview page. This isolates each
+ * section from the others.
+ */
+ 
+.overview-spacing {
+ margin-bottom: 50px;
+}
+
+
+/*
+ * This class defines the dimensions and position of aims section
+ * so that it can be properly spaced from the other sections.
+ */ 
+ 
+.overview-content-aims {
+    
+ /* Make position relative. */
+ position: relative;
+ 
+ /* Make section 90% the height of container. (90% of 250px) */
+ height: 90%;
+}
+
+/* 
+ * This class styles the unordered lists in the aims section such
+ * as the bullet type, font size, and margins.
+ */
+ 
+.overview-content-aims ul {
+    
+ /* Change bullet style to circles. */
+ list-style-type: circle;
+ 
+ /* Reduce font size. */
+ font-size: 0.8em;
+ 
+ /* Add some space to the left. */
+ margin-left: 30px;
+}
+
+/*
+ * This styles ordered list in the aims section by 
+ * reducing the font size and adding space at the bottom of each listed element.
+ */
+ 
+.overview-content ol li {
+    
+ /* Add space beneath listed elements. */
+ padding-bottom: 3px;
+ 
+ /* Reduce font size. */
+ font-size: 0.9em;
+}
+
+/*
+ * This class moves the aims navigation all the way
+ * to the bottom of the container and keeps it in the same spot.
+ */
+ 
+.aim-nav {
+    
+ /* Change to absolute. */
+ position: absolute;
+ 
+ /* Move it to bottom-right corner of container. */
+ right: 0;
+ bottom: 0;
+ 
+ /* Reduce font size. */
+ font-size: 0.7em;
+}
+
+/******************************************************************************
+* Section 07: Graphics styling
 *
 * This section contains the styling for all the images in the page contents
 * across the website. 
@@ -600,66 +716,134 @@ ul li {
 }
 
 /******************************************************************************
-* Section 07: Team page pictures styling
+* Section 08: Team page pictures styling
 *
 * This section contains the styling for the crossfading picture
-* slideshow on the nih-team.shtml page.
+* slideshow on the nih-team.shtml page. The crossfade slideshow is done by
+* using unordered lists to store the images.
 ******************************************************************************/
 
+/*
+ * This class defines the size of the pictures and makes
+ * element inline-block so all 3 crossfade slideshows will
+ * be on the same line. 
+ */
+ 
 .cf {
+    
+ /* Define dimensions of container holding crossfade slideshow. */
  height: 160px;
  width: 225px;
+ 
+ /* Change display to inline-block so all slideshows on same line. */
  display: inline-block;
+ 
+ /* Remove gap between slideshows. */
  margin-right: -5px;
 }
 
+/* 
+ * This resets the margins and padding of the unordered lists,
+ * removes the bullets and changes position style to relative.
+ */
+
 .cf ul {
+    
+ /* Remove bullets. */
  list-style: none; 
+ 
+ /* Reset margins/padding. */
  margin: 0;
  padding: 0;
+ 
+ /* Turn to relative positioning. */
  position: relative;
 }
 
+/*
+ * This controls the positioning of the images in the crossfade
+ * slideshow. Makes the images absolute so the images can overlap.
+ */
+ 
 .cf li {
+    
+ /* Change to absolute so images can overlap. */
  position: absolute;
+ 
+ /* Move pictures to left to center them. */
  left: 20%;
 }
 
+/*
+ * This defines the dimensions of the images.
+ */
+ 
 .cf img{
- height: 150px;
+ height: 160px;
  width: 225px;
 }
 
+/*
+ * The following 4 selectors define the timing of transitions. 
+ * It will take 16 seconds total to lapse through all 4 pictures, 
+ * therefore each picture will have 4 seconds to display each picture.
+ * All images will run for 16 seconds, but when their display times
+ * are staggered.
+ * The pictures will loop forever.
+ */
+ 
 .cf li:nth-child(4) {
+    
+ /* Picture visible from 0-4 seconds */
  animation: xfade 16s 0s infinite;
 }
 
 .cf li:nth-child(3) {
+    
+ /* Picture visible from 4-8 seconds. */ 
  animation: xfade 16s 4s infinite;
 }
 
 .cf li:nth-child(2) {
+    
+ /* Picture visible from 8-12 seconds. */
  animation: xfade 16s 8s infinite;
 }
 
 .cf li:nth-child(1) {
+ 
+ /* Picture visible from 12-16 seconds. */
  animation: xfade 16s 12s infinite;
 }
 
+/*
+ * This defines the animation frames for the crossfading images.
+ * At 0% (beginning of the 16 seconds), the image will start to fade in.
+ * Once the image reaches 17% of its time, it will be completely visible.
+ * Starting at the 25% mark, it will start to fade out and at
+ * 92% it is completely gone.
+ */
+
 @keyframes xfade{
+    
+ /* Picture completely visible. */
  17% {
   opacity:1;
  }
+ 
+ /* Start to fade out. */
  25% {
   opacity:0;
  }
+ 
+ /* Completely gone. */
  92% {
   opacity:0;
  }
 }
 
 /******************************************************************************
-* Section 08: Faculty profile styling
+* Section 09: Faculty profile styling
 *
 * This section contains all the styling for the faculty profile pictures for their bios
 * on the nih_team-faculty.html page.
@@ -767,7 +951,7 @@ ul li {
 
 
 /******************************************************************************
-* Section 09: Subpages section styling
+* Section 10: Subpages section styling
 *
 * This section styles the buttons for the subpages about this project. 
 * These buttons are here if needed if they are different from the ones on
@@ -875,7 +1059,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 10: Column-section section styling
+* Section 11: Column-section section styling
 *
 * This section contains the styling for the column-section section of the webpage.
 * The font-styling, background color, height of section, and some margin adjustments are done.
@@ -970,6 +1154,7 @@ ul li {
  /* Adds space to right of unordered list. */
  padding-right: 10px;
  
+ /* Removes default indentation. */
  margin-left: -50px;
 }
 
@@ -989,6 +1174,9 @@ ul li {
  
  /* Add some spacing around the listed items. */
  padding-left: 8px;
+ 
+ /* Move items back to remove default indentation. */
+ margin-left: -50px;
 }
 
 /* 
@@ -1037,7 +1225,7 @@ ul li {
 }
  
 /******************************************************************************
-* Section 11: Footer section styling
+* Section 12: Footer section styling
 *
 * This section styles the footer of the page. The footer contains any copyright
 * information, credits, and acknowledgements that need to be displayed.

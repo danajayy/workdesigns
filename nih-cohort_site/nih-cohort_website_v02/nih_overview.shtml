@@ -92,7 +92,7 @@
 	 
 	<!-- title of webpage -->
 	<!--				-->
-	<h2 class="title">Mission</h2>
+	<h2 class="title">Overview</h2>
 	 
    <!-- end of header div -->
    <!--				-->
@@ -111,30 +111,34 @@
      <!--               -->
      <div id="overview-content">
       
-      <span id="default" class="anchor"></span>
-      <p style="margin: 50px 0px 150px 0px;">Electroencephalography (EEG) records and measures the electrical activity of the brain and the collected information are used to diagnose brain disorders and diseases, such as epilepsy and Alzheimer's disease. They are also used in research fields such as neuroscience, medicine, and bioengineering. However, EEG signals are complex signals and their interpretations vary by their observer which can lead to inconsistent diagnoses and slow down research progression.</p>
+      <!-- Intro -- >
+      <!--              -->
+      
+      <!-- page jump anchor for Intro -->
+      <!--              -->
+      <span id="intro" class="anchor"></span>
+      <p style="margin: 50px 0px 150px 0px;">Electroencephalography (EEG) records and measures the electrical activity of the brain and the collected information are used to diagnose brain disorders and diseases, such as epilepsy and Alzheimer's disease. They are also used in research fields such as neuroscience, medicine, and bioengineering. However, EEG signals are complex signals and their interpretations vary by their observer which can lead to inconsistent diagnoses and slow down research progression.</br></br> Currently, there is an <strong>absence of enabling search technologies able to efficiently operate on EEG data resource</strong> because</br></br>(1) EEG signals and reports are difficult to automatically process and analyze and </br>(2) it is difficult to automatically process patients based on their EEG reports and signals.</p>
      
+      <!-- Proposed Solution -->
+      <!--              -->
+      
+      <!-- page jump anchor for Solution -->
+      <!--              -->
       <span id="solution" class="anchor"></span>
       <img style="display: block; margin: auto; height: 100px;" src="img/project_flow-diagram.png" />
       <p class="overview-spacing">Our proposed solution is <strong>automating the extraction of clinical information from a large database of EEG signals and EEG reports through a patient cohort retrieval system.</strong> This resource will allow users to search the large EEG archive and list patient records of EEGs relevant for interpretation of specific cases. It will help with diagnosing brain illnesses, conducting clinical research, and training young neurophysiologists. For proof-of-concept, this project uses the Temple University Hospital (TUH) EEG corpus which contains 25,000 sessions and 15,000 patients that have been collected over the span of 12 years, to create the patient cohort retrieval system.</p>
      
-      <span id="challenges" class="anchor"></span>
-      <p>The apparent challenges in this project are</p>
-      <ol class="overview-spacing">
-       <li> The EEG report formats from the the TUH EEG corpus vary between physicians.</li>
-       <li>The interpretations and findings between physicians are inconsistent.</li>
-       <li>Automatically processing EEG signals and reports.</li>
-       <li>Searching patients based on their EEG reports and signals.</li>
-      </ol>
-     
       </br></br></br>
      
+      <!-- page jump anchor for Aims -->
+      <!--              -->
       <span id="aims" class="anchor"></span>
+      
       <!-- start of column-section -->
       <!--				-->
       <div style="height: 100px;" class="column-section">
 	
-	   <!-- 4 columns in column-section -->
+	   <!-- 4 columns -->
 	   <!--				-->
 	 
 	   <!-- Aim 1 Column -->
@@ -182,6 +186,9 @@
       
       <!-- Aim 1 Further Info -->
       <!--              -->
+      
+      <!-- page jump anchor for Aim 1 -->
+      <!--              -->
       <span id="aim1" class="anchor"></span>
       
       <!-- need this div to keep aims nav bar at same place -->
@@ -198,6 +205,9 @@
         <li>Artifact (ARTF)</li>
        </ul>
       
+       <!-- Aims N
+avigation -->
+       <!--             -->
        <div class="aim-nav">
         <a href="#aims"><< Back</a> || <a href="#aim2">Next: Aim 2 >></a>
        </div>
@@ -210,13 +220,19 @@
       
       <!-- Aim 2 Further Info -->
       <!--              -->
+      
+      <!-- page jump anchor for Aim 2 -->
+      <!--              -->
       <span id="aim2" class="anchor"></span>
       
       <!-- need this div to keep aims nav bar at same place -->
       <!--              -->
       <div class="overview-content-aims">
-      
+       
        <h3 class="title">Aim 2: Automatically Recognize Critical Clinical Concepts in the EEG Reports</h3>
+       
+       <img style="height: 150px; padding-left: 20px;" src="img/aim2-diagram.png" align="right"/>
+       
        <p>We will automatically identify:</p>
        <ul>
         <li>The patient's clinical history, conditions, and medication</li>
@@ -224,6 +240,8 @@
         <li>Objective descriptions of the observeed activity, patterns, and events in the EEG</li>
        </ul>
       
+       <!-- Aims Navigation -->
+       <!--             -->
        <div class="aim-nav">
         <a href="#aim1"><< Back</a> || <a href="#aim3">Next: Aim 3 >></a>
        </div>
@@ -236,13 +254,19 @@
       
       <!-- Aim 3 Further Info -->
       <!--              -->
+      
+      <!-- page jump anchor for Aim 3 -->
+      <!--              -->
       <span id="aim3" class="anchor"></span>
       
       <!-- need this div to keep aims nav bar at same place -->
       <!--              -->
       <div class="overview-content-aims">
       
+       <img style="height: 100px; padding-left: 20px;" src="img/aim3-diagram.png" align="right"/>
+       
        <h3 class="title">Aim 3: Automatic Patient Cohort Retrieval</h3>
+       
        <p>Create a system that can accurately identify a desired patient population that will provide:</p>
        <ul>
         <li>Annotated EEG reports and EEG signals with processed semantic information</li>
@@ -251,6 +275,8 @@
         <li>Organize EEG signal and report analysis using the qualified medical knowledge graph (QMKG) which will be used to increase the system's accuracy</li>
        </ul>
       
+       <!-- Aims Navigation -->
+       <!--             -->
        <div class="aim-nav">
         <a href="#aim2"><< Back</a> || <a href="#aim4">Next: Aim 4 >></a>
        </div>
@@ -263,18 +289,24 @@
       
       <!-- Aim 4 Further Info -->
       <!--              -->
+      
+      <!-- page jump anchor for Aim 4 -->
+      <!--              -->
       <span id="aim4" class="anchor"></span>
       
       <!-- need this div to keep aims nav bar at same place -->
       <!--              -->
        <div class="overview-content-aims">
        <h3 class="title">Aim 4: Evaluation and Analysis of the Results of the Patient Cohort Retrieval</h3>
+       
        <ul>
         <li>Analyze the retrieved non-relevant EEG reports from a search request</li>
         <li>Analyze relevant EEG reports that were not in the listed results</li>
         <li>Improve the search requirements for clinical studies involving EEG data (e.g. "inclusion criteria" to describe the type of patients needed for a clinical study)</li>
        </ul> 
       
+       <!-- Aims Navigation -->
+       <!--             -->
        <div class="aim-nav">
         <a href="#aim3"><< Back</a> || <a href="#aim1">Back to Top >></a>
        </div>
@@ -303,7 +335,7 @@
 	<!-- first column -->
 	<!--				-->
 	<div class="subpage-btn">  
-	 <a href="#default"><p class="title">Intro</p></a>
+	 <a href="#intro"><p class="title">Intro</p></a>
 	</div>
 	  
 	<!-- Solution overview -->
@@ -313,15 +345,8 @@
 	 <a href="#solution"><p class="title">Solution</p></a>
 	</div>
     
-	<!-- Challenges overview -->
-	<!-- third column -->
-	<!--				-->
-	<div class="subpage-btn">
-	 <a href="#challenges"><p class="title">Challenges</p></a>
-	</div>
-    
 	<!-- Aims overview -->
-	<!-- fourth column -->
+	<!-- third column -->
 	<!--				-->
 	<div class="subpage-btn">
 	 <a href="#aims"><p class="title">Aims</p></a>
